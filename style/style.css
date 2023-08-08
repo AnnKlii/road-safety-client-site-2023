@@ -6,6 +6,7 @@
 
 a {
   text-decoration: none;
+  color: #060606;
 }
 
 li {
@@ -13,7 +14,7 @@ li {
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
 .container {
@@ -62,8 +63,6 @@ body {
   justify-content: space-between;
   gap: 30px;
   left: 20%;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
   width: 60%;
   padding: 10px;
   font-size: 20px;
@@ -78,16 +77,30 @@ body {
 .header__navigation {
   position: relative;
 }
+.header__title {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+.header__name {
+  color: #FFBA00;
+  font-weight: 700;
+  font-size: 50px;
+  text-transform: uppercase;
+  -webkit-text-stroke: 1px #130C00;
+}
+.header__text {
+  color: #ffffff;
+  font-weight: 300;
+  text-align: center;
+  font-size: 24px;
+}
 .header__link {
-  color: white;
+  color: #ffffff;
+  font-weight: 500;
 }
 .header__link:hover {
-  color: yellow;
-  background: black;
-  padding: 10px 0;
-}
-.header__link-block:hover {
-  background-color: black;
+  color: #ffc443;
 }
 @media screen and (max-width: 1024px) {
   .header {
@@ -108,8 +121,11 @@ body {
 
 .logo {
   position: relative;
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
+}
+.logo_block {
+  position: absolute;
 }
 
 #myVideo {
@@ -126,9 +142,11 @@ body {
 }
 .main__title {
   text-align: center;
-  padding-bottom: 50px;
-  color: black;
+  padding-top: 100px;
+  padding-bottom: 20px;
+  color: #130C00;
   text-transform: uppercase;
+  font-weight: 500;
 }
 .main__card {
   display: flex;
@@ -138,7 +156,12 @@ body {
   box-shadow: 10px 5px 5px gray;
 }
 .main__card:hover {
-  box-shadow: 10px 10px 10px rgb(211, 240, 49);
+  box-shadow: 10px 10px 10px #676666;
+}
+.main__card__text {
+  color: #060606;
+  font-weight: 200;
+  font-size: 18px;
 }
 .main__cards {
   display: grid;
@@ -146,7 +169,19 @@ body {
   gap: 20px;
 }
 .main__card-text {
-  overflow: scroll;
+  color: #130C00;
+}
+
+.article_text {
+  font-size: 18px;
+  font-weight: 200;
+  color: #060606;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+span {
+  color: #ffffff;
 }
 
 .sub-menu {
@@ -160,13 +195,10 @@ body {
 }
 
 .links {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  margin: 100px 0;
   display: flex;
   flex-direction: column;
-}
-.links__title {
-  text-align: center;
+  background-color: rgba(193, 189, 189, 0.274);
 }
 .links__img {
   width: 200px;
@@ -177,15 +209,53 @@ body {
 }
 .links__important {
   padding-top: 70px;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
   gap: 50px;
+  padding-bottom: 200px;
 }
 @media screen and (max-width: 767px) {
   .links__important {
-    flex-direction: column;
     align-items: center;
   }
+}
+
+.map {
+  background-image: url(../assets/image/kaliningrad.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.gibdd {
+  background-image: url(../assets/image/gibdd.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.government {
+  background-image: url(../assets/image/government.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.content {
+  height: 250px;
+  background-color: rgb(235, 202, 54);
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.content:hover {
+  background-color: rgb(238, 215, 109);
+}
+.content_image {
+  height: 50px;
 }
 
 .sub_link {
@@ -216,4 +286,8 @@ body {
 }
 .footer__logo {
   width: 100px;
+}
+.footer__text {
+  color: #ffffff;
+  font-weight: 200;
 }/*# sourceMappingURL=style.css.map */
