@@ -190,6 +190,10 @@ position: absolute
     padding-bottom: 50px;
 }
 
+.links-title {
+    padding: 20px;
+}
+
 span {
     color: $whitecolor;
 }
@@ -218,6 +222,13 @@ display: block;
         &:hover {
         transform: scale(1.2);   
         }
+    }
+
+    &__ochra {
+        color: $ochracolor;
+        font-weight: 400;
+        text-align: center;
+        padding-top: 100px;
     }
 
     &__important {
@@ -300,6 +311,12 @@ text-align: center;
 
 .footer {
 background-color: $middleblack;
+
+&__content {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
     &__logo {
         width: 100px;
     }
@@ -307,4 +324,36 @@ background-color: $middleblack;
         color: $whitecolor;
         font-weight: 200;
     }
+    &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    &__address {
+        color: $ochracolor;
+    }
+    &__center {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    &_title {
+    color: $whitecolor;
+    border-bottom: 1px solid $ochracolor;
+    }
+    &__links {
+        color: $whitecolor;
+        font-weight: 200;
+
+        &:hover {
+            color: $ochracolor;  
+        }
+    }
+}
+
+.address_img {
+    fill: $ochracolor;
+    width: 10px;
+    height: 10px;
 }
