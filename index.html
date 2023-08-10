@@ -21,8 +21,7 @@
 </a>
 </div>
 <div class="header__title">
-    <h1 class="header__name">дорожный патруль Калининграда</h1>
-    <p class="header__text">Ориентирован на активное участие молодых и инициативных<br> жителей Калининграда в поддержании общественного порядка<br> и обеспечении безопасности дорожного движения в городе</p>
+    <h1 class="header__name">КАЛИНИНГРАДСКАЯ РЕГИОНАЛЬНАЯ ОБЩЕСТВЕННАЯ<br> ОРГАНИЗАЦИЯ РАЗВИТИЯ ИНФРАСТРУКТУРЫ,<br> БЛАГОУСТРОЙСТВА И ОБЩЕСТВЕННОГО КОНТРОЛЯ<br> "ДОРОЖНЫЙ ПАТРУЛЬ"</h1>
 </div>
 <div class="header__navigation overlay">
 <nav>
@@ -53,9 +52,17 @@
         </li>
         <li class="header__link-block"><a class="header__link" href="#">Контакты</a></li>
     </ul>
-    <div class="header__burger">
-    <img class="header__img" src="./assets/image/menu_burger.svg" alt="Menu">
-    </div>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Меню</button>
+        <div id="myDropdown" class="dropdown-content">
+                <a class="header__link" href="#">О нас</a>
+                <a class="header__link" href="#">Статьи</a>
+                <a class="header__link" href="#">Карта</a>
+                <a class="header__link" href="#">Штрафы и Налоги</a>
+                <a class="header__link" href="#">ПДД</a>
+                <a class="header__link" href="#">Контакты</a>
+        </div>
+        </div>
 </nav>
 </div>
     </header>
@@ -225,5 +232,24 @@
         </div>
     </div>
     </footer>
+    <script>
+        function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+    var openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+    }
+    }
+}
+}
+    </script>
 </body>
 </html>
