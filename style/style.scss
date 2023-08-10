@@ -537,15 +537,44 @@ background-color: $middleblack;
     display: flex;
     justify-content: space-around;
     padding: 50px 0;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    }
 }
     &__logo {
         width: 100px;
     }
+
+    &__links {
+        color: $whitecolor;
+    }
     &__text {
         color: $whitecolor;
         font-weight: 200;
+        @media screen and (max-width: 767px) {
+        display: flex;
+    gap: 10px;
+    justify-content: center;
+        }
     }
     &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 200px;
+
+        @media screen and (max-width: 767px) {
+        text-align: center;
+        padding: 0 30px;
+        max-width: 200px;
+        }
+    }
+
+    &_right {
+        padding-top: 40px;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -558,6 +587,7 @@ background-color: $middleblack;
         flex-direction: column;
         gap: 20px;
         align-items: center;
+        padding-top: 40px;
     }
     &_title {
     color: $whitecolor;
@@ -575,6 +605,6 @@ background-color: $middleblack;
 
 .address_img {
     fill: $ochracolor;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
 }
