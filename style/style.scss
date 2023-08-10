@@ -82,7 +82,7 @@ z-index: -1
     &__title {
         position: absolute;
     top: 40%;
-    left: 30%;
+    left: 25%;
 
     @media screen and (min-width: 768px) and (max-width: 1024px) {
         top: 50%;
@@ -91,10 +91,12 @@ z-index: -1
         background-color: #80808073;
     }
     @media screen and (max-width: 767px) {
-        top: 40%;
-        left: 25%;
-        box-shadow: 0 0 7px black;
-        background-color: #80808073; 
+        position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     }
 
     }

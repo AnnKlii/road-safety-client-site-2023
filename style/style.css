@@ -81,7 +81,7 @@ body {
 .header__title {
   position: absolute;
   top: 40%;
-  left: 30%;
+  left: 25%;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .header__title {
@@ -93,10 +93,12 @@ body {
 }
 @media screen and (max-width: 767px) {
   .header__title {
-    top: 40%;
-    left: 25%;
-    box-shadow: 0 0 7px black;
-    background-color: rgba(128, 128, 128, 0.4509803922);
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
   }
 }
 .header__name {
