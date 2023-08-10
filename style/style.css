@@ -70,6 +70,7 @@ body {
   font-weight: bolder;
   text-transform: uppercase;
   padding-top: 30px;
+  margin-left: 20px;
 }
 @media screen and (max-width: 1024px) {
   .header__nav {
