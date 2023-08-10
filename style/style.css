@@ -81,20 +81,60 @@ body {
 .header__title {
   position: absolute;
   top: 40%;
-  left: 20%;
+  left: 30%;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .header__title {
+    top: 50%;
+    left: 20%;
+    box-shadow: 0 0 7px black;
+    background-color: rgba(128, 128, 128, 0.4509803922);
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__title {
+    top: 40%;
+    left: 25%;
+    box-shadow: 0 0 7px black;
+    background-color: rgba(128, 128, 128, 0.4509803922);
+  }
 }
 .header__name {
   color: #FFBA00;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 70px;
   text-transform: uppercase;
   -webkit-text-stroke: 1px #130C00;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .header__name {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__name {
+    font-size: 30px;
+    text-align: center;
+  }
 }
 .header__text {
   color: #ffffff;
   font-weight: 300;
   text-align: center;
   font-size: 24px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .header__text {
+    -webkit-text-stroke: 1px #130C00;
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 767px) {
+  .header__text {
+    font-size: 18px;
+    font-weight: 300;
+  }
 }
 .header__link {
   color: #ffffff;
@@ -112,6 +152,7 @@ body {
 .dropbtn {
   background-color: #FFBA00;
   color: #130C00;
+  border-radius: 7%;
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -126,12 +167,18 @@ body {
   position: absolute;
   display: inline-block;
   margin-top: 50px;
-  left: 70%;
+  left: 80%;
   display: none;
 }
 @media screen and (max-width: 1024px) {
   .dropdown {
     display: block;
+  }
+}
+@media screen and (max-width: 767px) {
+  .dropdown {
+    margin-top: 30px;
+    left: 70%;
   }
 }
 
@@ -143,6 +190,11 @@ body {
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+}
+@media screen and (max-width: 1024px) {
+  .dropdown-content {
+    min-width: 80px;
+  }
 }
 
 .dropdown-content a {
@@ -165,6 +217,12 @@ body {
   height: 150px;
   width: 150px;
 }
+@media screen and (max-width: 767px) {
+  .logo {
+    height: 100px;
+    width: 100px;
+  }
+}
 .logo_block {
   position: absolute;
 }
@@ -180,6 +238,12 @@ body {
   display: flex;
   flex-direction: column;
   padding-top: 100px;
+}
+@media screen and (max-width: 767px) {
+  .main {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
 }
 .main__title {
   text-align: center;
@@ -246,6 +310,11 @@ span {
   flex-direction: column;
   background-color: rgba(193, 189, 189, 0.274);
 }
+@media screen and (max-width: 767px) {
+  .links {
+    margin: 0;
+  }
+}
 .links__img {
   width: 200px;
   height: 250px;
@@ -269,6 +338,8 @@ span {
 @media screen and (max-width: 767px) {
   .links__important {
     align-items: center;
+    padding-bottom: 100px;
+    padding-top: 0;
   }
 }
 
@@ -330,6 +401,11 @@ span {
   background-position-y: 20%;
   margin: 250px 0;
 }
+@media screen and (max-width: 767px) {
+  .test {
+    margin: 0;
+  }
+}
 .test__main {
   display: flex;
   flex-direction: column;
@@ -342,15 +418,30 @@ span {
   text-align: center;
   font-size: 36px;
 }
+@media screen and (max-width: 767px) {
+  .test__title {
+    font-size: 24px;
+  }
+}
 .test__top {
   display: flex;
   flex-direction: column;
   padding: 100px 0;
   gap: inherit;
 }
+@media screen and (max-width: 767px) {
+  .test__top {
+    padding: 50px 0;
+  }
+}
 .test__up {
   display: flex;
   gap: 50px;
+}
+@media screen and (max-width: 767px) {
+  .test__up {
+    flex-direction: column;
+  }
 }
 .test__part {
   display: flex;
@@ -365,6 +456,11 @@ span {
   font-size: 20px;
   color: black;
 }
+@media screen and (max-width: 767px) {
+  .test__button {
+    margin-bottom: 50px;
+  }
+}
 .test__button:hover {
   background-color: #ffc443;
 }
@@ -378,12 +474,22 @@ span {
   color: #130C00;
   text-align: center;
 }
+@media screen and (max-width: 767px) {
+  .test__text {
+    font-size: 18px;
+  }
+}
 .test__statistics {
   background-color: #FFBA00;
   display: flex;
   padding: 0 50px;
   align-self: center;
   margin-bottom: -40px;
+}
+@media screen and (max-width: 767px) {
+  .test__statistics {
+    display: none;
+  }
 }
 .test__stat {
   display: flex;
