@@ -8,7 +8,7 @@
 
 a {
 text-decoration: none;
-color: $middleblack;
+color: #464646;
 }
 
 li {
@@ -68,6 +68,7 @@ z-index: -1
     font-size: 20px;
     font-weight: bolder;
     text-transform: uppercase;
+    padding-top: 30px;
 
     @media screen and (max-width: 1024px) {
         display: none;
@@ -156,18 +157,22 @@ position: absolute
     &__card {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 40px;
         padding: 20px;
-        box-shadow: 10px 5px 5px gray;
+        box-shadow: 10px 5px 5px #e4dede;
+        border: 1px solid gray;
 
         &:hover {
             box-shadow: 10px 10px 10px $graycolor;
         }
 
         &__text {
-            color: $middleblack;
+            color: rgb(158, 156, 156);
             font-weight: 200;
             font-size: 18px;
+        }
+        &__link {
+            color: #464646 !important;
         }
     }
 
@@ -175,10 +180,6 @@ position: absolute
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
         gap: 20px;
-    }
-
-    &__card-text {
-        color: $blackcolor;
     }
 }
 
@@ -244,6 +245,10 @@ display: block;
     }
 }
 
+.card__text {
+    padding-top: 20px;
+}
+
 .map {
     background-image: url(../assets/image/kaliningrad.jpg);
     background-size: contain;
@@ -285,7 +290,7 @@ text-align: center;
     color: white;
 
     &:hover {
-        color: red;
+        color: $ochracolor;
     }
 }
 
@@ -293,6 +298,18 @@ text-align: center;
     display: flex;
     flex-direction: column;
     align-self: center;
+    background-image: url(../assets/image/test_main.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 20%;
+    justify-content: center;
+    margin: 250px 0;
+
+    &__main {
+        display: flex;
+    flex-direction: column;
+    }
 
     &__title {
         padding-top: 100px;
@@ -300,11 +317,43 @@ text-align: center;
         text-align: center;
     }
 
+    &__top {
+        display: flex;
+    flex-direction: column;
+    }
+
+    &__up {
+        display: flex;
+        gap: 50px;
+    }
+
+    &__part {
+        display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    }
+
+    &__button {
+        padding: 20px 70px;
+    background-color: $ochracolor;
+    border-radius: 15%;
+    text-align: center;
+    align-self: center;
+    }
+
     &__img {
 
         @media screen and (max-width: 767px) {
             max-width: 200px;
         }
+    }
+
+    &__statistics {
+        background-color: $ochracolor;
+        display: flex;
+        padding: 0 50px;
+        align-self: center;
+        margin-bottom: -40px;
     }
 }
 

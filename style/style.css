@@ -6,7 +6,7 @@
 
 a {
   text-decoration: none;
-  color: #060606;
+  color: #464646;
 }
 
 li {
@@ -68,6 +68,7 @@ body {
   font-size: 20px;
   font-weight: bolder;
   text-transform: uppercase;
+  padding-top: 30px;
 }
 @media screen and (max-width: 1024px) {
   .header__nav {
@@ -151,25 +152,26 @@ body {
 .main__card {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 40px;
   padding: 20px;
-  box-shadow: 10px 5px 5px gray;
+  box-shadow: 10px 5px 5px #e4dede;
+  border: 1px solid gray;
 }
 .main__card:hover {
   box-shadow: 10px 10px 10px #676666;
 }
 .main__card__text {
-  color: #060606;
+  color: rgb(158, 156, 156);
   font-weight: 200;
   font-size: 18px;
+}
+.main__card__link {
+  color: #464646 !important;
 }
 .main__cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(205px, 1fr));
   gap: 20px;
-}
-.main__card-text {
-  color: #130C00;
 }
 
 .article_text {
@@ -230,6 +232,10 @@ span {
   }
 }
 
+.card__text {
+  padding-top: 20px;
+}
+
 .map {
   background-image: url(../assets/image/kaliningrad.jpg);
   background-size: contain;
@@ -272,23 +278,61 @@ span {
   color: white;
 }
 .sub_link:hover {
-  color: red;
+  color: #FFBA00;
 }
 
 .test {
   display: flex;
   flex-direction: column;
   align-self: center;
+  background-image: url(../assets/image/test_main.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 20%;
+  justify-content: center;
+  margin: 250px 0;
+}
+.test__main {
+  display: flex;
+  flex-direction: column;
 }
 .test__title {
   padding-top: 100px;
   padding-bottom: 100px;
   text-align: center;
 }
+.test__top {
+  display: flex;
+  flex-direction: column;
+}
+.test__up {
+  display: flex;
+  gap: 50px;
+}
+.test__part {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}
+.test__button {
+  padding: 20px 70px;
+  background-color: #FFBA00;
+  border-radius: 15%;
+  text-align: center;
+  align-self: center;
+}
 @media screen and (max-width: 767px) {
   .test__img {
     max-width: 200px;
   }
+}
+.test__statistics {
+  background-color: #FFBA00;
+  display: flex;
+  padding: 0 50px;
+  align-self: center;
+  margin-bottom: -40px;
 }
 
 .footer {
