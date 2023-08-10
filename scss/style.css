@@ -112,7 +112,7 @@ body {
 }
 .fine-main__title {
   text-align: center;
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 20px;
   color: #130C00;
   text-transform: uppercase;
@@ -120,7 +120,7 @@ body {
 }
 .fine-main__text {
   font-size: 24px;
-  font-weight: 400;
+  font-weight: 390;
   color: #060606;
   text-align: center;
   padding-bottom: 20px;
@@ -133,7 +133,7 @@ body {
   font-weight: 500;
   align-items: center;
   row-gap: 10px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
 }
 .fine-links__calc {
   border-bottom: 2px solid #FFBA00;
@@ -169,6 +169,7 @@ body {
 .contacts-main {
   display: flex;
   flex-direction: column;
+  padding-right: 0;
 }
 .contacts-main__title {
   text-align: center;
@@ -181,7 +182,44 @@ body {
 }
 .contacts-main__block-top {
   display: flex;
-  gap: 200px;
+  gap: 100px;
+  padding-bottom: 30px;
+}
+.contacts-main__photo {
+  width: 80px;
+  height: 100px;
+  padding-left: 30px;
+  border: 1px solid black;
+}
+.contacts-main__name {
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.contacts-main__job {
+  margin-bottom: 10px;
+}
+.contacts-main__block-bottom {
+  display: flex;
+  padding-top: 100px;
+  padding-left: 0;
+  padding-right: 0;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+.contacts-main__items {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.contacts-main__address {
+  padding-top: 40px;
+}
+.contacts-main__text {
+  padding-left: 35px;
+  padding-bottom: 30px;
+}
+.contacts-main__mail {
   padding-bottom: 30px;
 }
 
@@ -263,14 +301,45 @@ span {
   justify-content: space-around;
   padding: 50px 0;
 }
+@media screen and (max-width: 767px) {
+  .footer__content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
 .footer__logo {
   width: 100px;
+}
+.footer__links {
+  color: #ffffff;
 }
 .footer__text {
   color: #ffffff;
   font-weight: 200;
 }
+@media screen and (max-width: 767px) {
+  .footer__text {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+}
 .footer__left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 200px;
+}
+@media screen and (max-width: 767px) {
+  .footer__left {
+    text-align: center;
+    padding: 0 30px;
+    max-width: 200px;
+  }
+}
+.footer_right {
+  padding-top: 40px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -283,6 +352,7 @@ span {
   flex-direction: column;
   gap: 20px;
   align-items: center;
+  padding-top: 40px;
 }
 .footer_title {
   color: #ffffff;
@@ -298,6 +368,6 @@ span {
 
 .address_img {
   fill: #FFBA00;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
 }/*# sourceMappingURL=style.css.map */

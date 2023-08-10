@@ -124,7 +124,7 @@ body {
 
     &__title {
         text-align: center;
-        padding-top: 50px;
+        padding-top: 100px;
         padding-bottom: 20px;
         color: $blackcolor;
         text-transform: uppercase;
@@ -133,7 +133,7 @@ body {
 
     &__text {
         font-size: 24px;
-        font-weight: 400;
+        font-weight: 390;
         color: $middleblack;
         text-align: center;
         padding-bottom: 20px;
@@ -147,7 +147,7 @@ body {
     font-weight: 500;
     align-items: center;
     row-gap: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 100px;
 
     &__calc {
         border-bottom: 2px solid $ochracolor;
@@ -191,6 +191,7 @@ body {
 .contacts-main {
     display: flex;
     flex-direction: column;
+    padding-right: 0;
 
     &__title {
         text-align: center;
@@ -204,10 +205,57 @@ body {
 
     &__block-top {
         display: flex;
-        gap: 200px;
+        gap: 100px;
+        padding-bottom: 30px;
+    }
+
+    &__photo {
+        width: 80px;
+        height: 100px;
+        padding-left: 30px;
+        border: 1px solid black;
+    }
+
+    &__name {
+        font-size: 20px;
+        font-weight: 500;
+        padding-bottom: 10px;
+    }
+
+    &__job {
+        margin-bottom: 10px;
+    }
+
+    &__block-bottom {
+        display: flex;
+        padding-top: 100px;
+        padding-left: 0;
+        padding-right: 0;
+        gap: 50px;
+        margin-bottom: 50px;
+    }
+
+    &__items {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+    }
+
+    &__address {
+        padding-top: 40px;
+    }
+
+    &__text {
+        padding-left: 35px;
+        padding-bottom: 30px;
+    }
+
+    &__mail {
         padding-bottom: 30px;
     }
 }
+
 
 span {
     color: $whitecolor;
@@ -293,18 +341,48 @@ span {
         display: flex;
         justify-content: space-around;
         padding: 50px 0;
+
+        @media screen and (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
     }
 
     &__logo {
         width: 100px;
     }
 
+    &__links {
+        color: $whitecolor;
+    }
+
     &__text {
         color: $whitecolor;
         font-weight: 200;
+
+        @media screen and (max-width: 767px) {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+        }
     }
 
     &__left {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        max-width: 200px;
+
+        @media screen and (max-width: 767px) {
+            text-align: center;
+            padding: 0 30px;
+            max-width: 200px;
+        }
+    }
+
+    &_right {
+        padding-top: 40px;
         display: flex;
         flex-direction: column;
         gap: 20px;
@@ -319,6 +397,7 @@ span {
         flex-direction: column;
         gap: 20px;
         align-items: center;
+        padding-top: 40px;
     }
 
     &_title {
@@ -338,6 +417,6 @@ span {
 
 .address_img {
     fill: $ochracolor;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
 }
