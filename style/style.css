@@ -334,6 +334,13 @@ span {
   align-self: center;
   margin-bottom: -40px;
 }
+.test__stat {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 30px;
+  align-items: center;
+}
 
 .footer {
   background-color: #060606;
