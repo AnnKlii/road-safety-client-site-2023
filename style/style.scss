@@ -356,14 +356,14 @@ display: block;
     background-position: top center;
 }
 .gibdd {
-    background-image: url(../assets/image/gibdd.png);
+    background-image: url(../assets/image/gibdd_emb.jpeg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: top center;
 }
 .government {
     background-image: url(../assets/image/government.png);
-    background-size: contain;
+    background-size: 200px;
     background-repeat: no-repeat;
     background-position: top center;
 }
@@ -378,11 +378,27 @@ gap: 20px;
 padding: 20px;
 text-align: center;
 
+@media screen and (max-width: 767px) {
+    gap: 10px;
+}
+
 &:hover {
     background-color: rgb(238, 215, 109); 
 }
     &_image {
         height: 50px;
+    }
+
+    &_title {
+
+        @media screen and (max-width: 767px) {
+            font-size: 18px;
+        }  
+    }
+    &_text {
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+        }
     }
 }
 

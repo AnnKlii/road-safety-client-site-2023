@@ -359,7 +359,7 @@ span {
 }
 
 .gibdd {
-  background-image: url(../assets/image/gibdd.png);
+  background-image: url(../assets/image/gibdd_emb.jpeg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top center;
@@ -367,7 +367,7 @@ span {
 
 .government {
   background-image: url(../assets/image/government.png);
-  background-size: contain;
+  background-size: 200px;
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -382,11 +382,26 @@ span {
   padding: 20px;
   text-align: center;
 }
+@media screen and (max-width: 767px) {
+  .content {
+    gap: 10px;
+  }
+}
 .content:hover {
   background-color: rgb(238, 215, 109);
 }
 .content_image {
   height: 50px;
+}
+@media screen and (max-width: 767px) {
+  .content_title {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .content_text {
+    font-size: 14px;
+  }
 }
 
 .sub_link {
