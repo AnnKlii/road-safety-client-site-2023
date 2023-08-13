@@ -17,56 +17,67 @@
 
 <body>
     <header class="header">
-        <div class="header__image">
-            <div class="logo_block">
-                <a href="#">
-                    <img class="logo" src="./assets/logo.png" alt="Logo">
-                </a>
-            </div>
-            <div class="header__title">
-                <h1 class="header__name"><span>ДНД</span> дорожный патруль Калининграда</h1>
-                <p class="header__text">Ориентирован на активное участие молодых и инициативных<br> жителей Калининграда
-                    в
-                    поддержании общественного порядка<br> и обеспечении безопасности дорожного движения в городе</p>
-            </div>
-            <div class="header__navigation overlay">
-                <nav>
-                    <ul class="header__nav container">
-                        <li class="header__link-block"><a class="header__link" href="#">О нас</a>
-                            <ul class="sub-menu">
-                                <li><a class="sub_link" href="#1">Информация</a></li>
-                                <li><a class="sub_link" href="#2">Местное отделение</a></li>
-                                <li><a class="sub_link" href="#3">Уставные документы</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__link-block"><a class="header__link" href="#">Статьи</a>
-                            <ul class="sub-menu">
-                                <li><a class="sub_link" href="#1">Законодательство</a></li>
-                                <li><a class="sub_link" href="#2">БДД</a></li>
-                                <li><a class="sub_link" href="#3">Прочее</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__link-block"><a class="header__link" href="map.html">Карта</a></li>
-                        <li class="header__link-block"><a class="header__link" href="fine.html">Штрафы и налоги</a>
-                            <ul class="sub-menu">
-                                <li><a class="sub_link" href="#1">Перейти на сайт ГИБДД</a></li>
-                                <li><a class="sub_link" href="#2">Перейти на сайт НАЛОГ</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__link-block"><a class="header__link" href="#">ПДД</a>
-                            <ul class="sub-menu">
-                                <li><a class="sub_link" href="#1">Прочтите детям</a></li>
-                                <li><a class="sub_link" href="#2">Памятка первокласснику</a></li>
-                                <li><a class="sub_link" href="#3">Тест на знание ПДД</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__link-block"><a class="header__link" href="#">Контакты</a></li>
-                    </ul>
-                    <div class="header__burger">
-                        <img class="header__img" src="./assets/image/menu_burger.svg" alt="Menu">
+        <div class="logo_block">
+            <a href="#">
+                <img class="logo" src="./assets/logo.png" alt="Logo">
+            </a>
+        </div>
+        <div class="header__title">
+            <h1 class="header__name">"ДОРОЖНЫЙ ПАТРУЛЬ"</h1>
+            <p class="header__text">КАЛИНИНГРАДСКАЯ РЕГИОНАЛЬНАЯ ОБЩЕСТВЕННАЯ<br> ОРГАНИЗАЦИЯ РАЗВИТИЯ
+                ИНФРАСТРУКТУРЫ,<br> БЛАГОУСТРОЙСТВА И ОБЩЕСТВЕННОГО КОНТРОЛЯ</p>
+        </div>
+        <div class="header__navigation overlay">
+            <nav>
+                <ul class="header__nav container">
+                    <li class="header__link-block"><a class="header__link" href="#">О нас</a>
+                        <ul class="sub-menu">
+                            <li><a class="sub_link" href="#1">Информация</a></li>
+                            <li><a class="sub_link" href="#2">Местное отделение</a></li>
+                            <li><a class="sub_link" href="#3">Уставные документы</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__link-block"><a class="header__link" href="#">Статьи</a>
+                        <ul class="sub-menu">
+                            <li><a class="sub_link" href="#1">Законодательство</a></li>
+                            <li><a class="sub_link" href="#2">БДД</a></li>
+                            <li><a class="sub_link" href="#3">Прочее</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__link-block"><a class="header__link" href="./map.html">Карта</a></li>
+                    <li class="header__link-block"><a class="header__link" href="./fine.html">Штрафы и Налоги</a>
+                        <ul class="sub-menu">
+                            <li><a class="sub_link"
+                                    href="https://calcus.ru/transportnyj-nalog-kalkulyator/kaliningradskaya-oblast"
+                                    target="_blank">Перейти
+                                    на сайт ГИБДД</a></li>
+                            <li><a class="sub_link"
+                                    href="https://calcus.ru/transportnyj-nalog-kalkulyator/kaliningradskaya-oblast"
+                                    target="_blank">Перейти
+                                    на сайт НАЛОГ</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__link-block"><a class="header__link" href="#">ПДД</a>
+                        <ul class="sub-menu">
+                            <li><a class="sub_link" href="#1">Прочтите детям</a></li>
+                            <li><a class="sub_link" href="#2">Памятка первокласснику</a></li>
+                            <li><a class="sub_link" href="#3">Тест на знание ПДД</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__link-block"><a class="header__link" href="./contacts.html">Контакты</a></li>
+                </ul>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Меню</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a class="header__link" href="#">О нас</a>
+                        <a class="header__link" href="#">Статьи</a>
+                        <a class="header__link" href="./map.html">Карта</a>
+                        <a class="header__link" href="./contacts.html">Штрафы и Налоги</a>
+                        <a class="header__link" href="#">ПДД</a>
+                        <a class="header__link" href="./contacts.html">Контакты</a>
                     </div>
-                </nav>
-            </div>
+                </div>
+            </nav>
         </div>
     </header>
 
