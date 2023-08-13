@@ -132,11 +132,6 @@ body {
 .header__link:hover {
   color: #ffc443;
 }
-@media screen and (max-width: 1024px) {
-  .header {
-    background: url("../assets/image/bg_mini.jpg") center center/cover no-repeat;
-  }
-}
 
 .dropbtn {
   background-color: #FFBA00;
