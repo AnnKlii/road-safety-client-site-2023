@@ -5,78 +5,196 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test</title>
-    <style>
-        .content {
-            padding-left: 100px;
-            padding-right: 100px;
-        }
+    <title>Document</title>
+    <link rel="stylesheet" href="./sass/style.css">
+    <link rel="stylesheet" href="./sass/style.scss">
 
-        .ticket {
-            display: grid;
-            grid-template-columns: repeat(10, 1fr);
-            grid-template-rows: repeat(4, 1fr);
-        }
-
-        .ticket-item {
-            padding: 20px;
-            border: 2px solid black;
-        }
-    </style>
 </head>
 
 <body>
     <header></header>
-    <div class="content">
-        <div>
-            <h1 class="title"> Билеты ПДД 2023</h1>
-            <div class="ticket">
-                <a class="ticket-item" href="./ticket1.html" style="background: rgb(87, 184, 248);">1</a>
-                <a class="ticket-item" href="">2</a>
-                <a class="ticket-item" href="">3</a>
-                <a class="ticket-item" href="">4</a>
-                <a class="ticket-item" href="">5</a>
-                <a class="ticket-item" href="">6</a>
-                <a class="ticket-item" href="">7</a>
-                <a class="ticket-item" href="">8</a>
-                <a class="ticket-item" href="">9</a>
-                <a class="ticket-item" href="">10</a>
-                <a class="ticket-item" href="">11</a>
-                <a class="ticket-item" href="">12</a>
-                <a class="ticket-item" href="">13</a>
-                <a class="ticket-item" href="">14</a>
-                <a class="ticket-item" href="">15</a>
-                <a class="ticket-item" href="">16</a>
-                <a class="ticket-item" href="">17</a>
-                <a class="ticket-item" href="">18</a>
-                <a class="ticket-item" href="">19</a>
-                <a class="ticket-item" href="">20</a>
-                <a class="ticket-item" href="">21</a>
-                <a class="ticket-item" href="">22</a>
-                <a class="ticket-item" href="">23</a>
-                <a class="ticket-item" href="">24</a>
-                <a class="ticket-item" href="">25</a>
-                <a class="ticket-item" href="">26</a>
-                <a class="ticket-item" href="">27</a>
-                <a class="ticket-item" href="">28</a>
-                <a class="ticket-item" href="">29</a>
-                <a class="ticket-item" href="">30</a>
-                <a class="ticket-item" href="">31</a>
-                <a class="ticket-item" href="">32</a>
-                <a class="ticket-item" href="">33</a>
-                <a class="ticket-item" href="">34</a>
-                <a class="ticket-item" href="">35</a>
-                <a class="ticket-item" href="">36</a>
-                <a class="ticket-item" href="">37</a>
-                <a class="ticket-item" href="">38</a>
-                <a class="ticket-item" href="">39</a>
-                <a class="ticket-item" href="">40</a>
+    <div class="wrapper">
+        <div class="quiz">
+            <section class="question">
+                <h3 class="question__title">Вопрос</h3>
+                <h4 class="question__question question1">В каком случае водитель совершит вынужденную остановку?
+                </h4>
+                <ol class="question__block">
+                    <li class="question__answer answer1-1"><button>Остановившись
+                            непосредственно
+                            перед пешеходным переходом,чтобы уступить дорогу пешеходу.</button></li>
+                    <li class="question__answer answer1-2"><button>Остановившись на проезжей части из-за
+                            технической неисправности транспортного средства</button></li>
+                    <li class="question__answer answer1-3"><button>В обоих перечисленных случаях. </button></li>
+                </ol>
+                <details class="question__info">
+                    <summary>Подсказка</summary>
+                    <p>Под вынужденной остановкой подразумевается прекращение
+                        движения ТС из-за его технической неисправности, опасности, создаваемой перевозимым грузом,
+                        внезапным ухудшением состояния водителя (или пассажира), а также появлением препятствия на
+                        дороге (упавший груз, завал на дороге и т. п.). Остановка, связанная с необходимостью
+                        выполнения
+                        требования уступить дорогу, не рассматривается как вынужденная (п. 1.2).</p>
+                </details>
+            </section>
 
-            </div>
+            <section class="question">
+                <h3 class="question__title">Вопрос</h3>
+                <div><img src="./assets/image/bilet1_2.jpg" alt=""></div>
+                <h4 class="question__question question2">Разрешен ли Вам поворот на дорогу с грунтовым покрытием?
+                </h4>
+                <ol class="question__block">
+                    <li class="question__answer answer2-1"><button>Разрешен.</button></li>
+                    <li class="question__answer answer2-2"><button>Разрешен только при технической неисправности
+                            транспортного средства.</button></li>
+                    <li class="question__answer answer2-3"><button>Запрещен. </button></li>
+                </ol>
+                <details class="question__info">
+                    <summary>Подсказка</summary>
+                    <p>Знаки 1.11.2 <img src="./assets/icon/1.11.2.png"> «Опасный поворот» и 1.34.2 <img
+                            src="./assets/icon/1.34.2.png"> «Направление поворота» указывают
+                        направление движения на
+                        закруглениях дороги малого радиуса с ограниченной видимостью. Эти знаки не ограничивают
+                        возможность
+                        выполнить другой поворот, в данном случае - на примыкающую справа грунтовую дорогу.</p>
+                </details>
+            </section>
+
+            <section class="question">
+                <h3 class="question__title">Вопрос</h3>
+                <div><img src="./assets/image/bilet1_3.jpg" alt=""></div>
+                <h4 class="question__question question3">Можно ли Вам остановиться в указанном месте для посадки
+                    пассажира?
+                </h4>
+                <ol class="question__block">
+                    <li class="question__answer answer3-1"><button>Можно.</button></li>
+                    <li class="question__answer answer3-2"><button> Можно, если Вы управляете такси.</button></li>
+                    <li class="question__answer answer3-3"><button>Нельзя. </button></li>
+                </ol>
+                <details class="question__info">
+                    <summary>Подсказка</summary>
+                    <p>Знак 3.28 <img src="./assets/icon/3.28.png"> «Стоянка запрещена» остановку не запрещает, поэтому
+                        Вы можете остановиться в указанном месте.</p>
+                </details>
+            </section>
+
+            <section class="question">
+                <h3 class="question__title">Вопрос</h3>
+                <div><img src="./assets/image/bilet1_4.jpg" alt=""></div>
+                <h4 class="question__question question4">Какие из указанных знаков запрещают движение водителям мопедов?
+                </h4>
+                <ol class="question__block">
+                    <li class="question__answer answer4-1"><button>Только А.</button></li>
+                    <li class="question__answer answer4-2"><button>Только Б.</button></li>
+                    <li class="question__answer answer4-3"><button>В и Г. </button></li>
+                    <li class="question__answer answer4-4"><button>Все. </button></li>
+                </ol>
+                <details class="question__info">
+                    <summary>Подсказка</summary>
+                    <p>Все указанные знаки запрещают движение водителям мопедов. Знак 5.14.1 <img
+                            src="./assets/icon/5.14.1.png"> (знак Б) «Полоса для
+                        маршрутных транспортных средств» используется для обозначения полосы, предназначенной для
+                        движения только маршрутных ТС, школьных автобусов и ТС, используемых в качестве легкового такси,
+                        а также велосипедистов, в случае, если такая полоса располагается справа (п. 18.2). Знак 4.4.1
+                        <img src="./assets/icon/4.4.1.png">
+                        (знак А) «Велосипедная дорожка», 4.5.2 <img src="./assets/icon/4.5.2.png"> «Пешеходная и
+                        велосипедная дорожка с совмещенным
+                        движением» (знак В) и 4.5.4 <img src="./assets/icon/4.5.4.png"> «Пешеходная и велосипедная
+                        дорожка с разделением движения» (знак Г)
+                        движение мопедов также не предусматривают. (п. 1.2 «Велосипедная дорожка»).
+                    </p>
+                </details>
+            </section>
+
+            <section class="question">
+                <h3 class="question__title">Вопрос</h3>
+                <div><img src="./assets/image/bilet1_5.jpg" alt=""></div>
+                <h4 class="question__question question5">Вы намерены повернуть налево. Где следует остановиться, чтобы
+                    уступить дорогу легковому автомобилю?
+                </h4>
+                <ol class="question__block">
+                    <li class="question__answer answer5-1"><button>Перед знаком.</button></li>
+                    <li class="question__answer answer5-2"><button>Перед перекрестком у линии разметки.</button></li>
+                    <li class="question__answer answer5-3"><button>На перекрестке перед прерывистой линией разметки.
+                        </button></li>
+                    <li class="question__answer answer5-4"><button>В любом месте по усмотрению водителя.
+                        </button></li>
+                </ol>
+                <details class="question__info">
+                    <summary>Подсказка</summary>
+                    <p>Разметка 1.13 <img src="./assets/icon/h1.13.png"> (в виде линии из
+                        треугольников) наносится
+                        поперек полосы движения и указывает
+                        место, где Вы должны при необходимости остановиться, выполняя требование знака 2.4 <img
+                            src="./assets/icon/2.4.png"> «Уступите
+                        дорогу» и предоставляя преимущество ТС, движущимся по пересекаемой дороге.</p>
+                </details>
+            </section>
+
+            <section class="question">
+                <h3 class="question__title">Вопрос</h3>
+                <h4 class="question__question question6">Что означает мигание зеленого сигнала светофора?
+                </h4>
+                <ol class="question__block">
+                    <li class="question__answer answer6-1"><button>Предупреждает о неисправности светофора.</button>
+                    </li>
+                    <li class="question__answer answer6-2"><button>Разрешает движение и информирует о том, что вскоре
+                            будет включен запрещающий сигнал.</button></li>
+                    <li class="question__answer answer6-3"><button>Запрещает дальнейшее движение. </button></li>
+                </ol>
+                <details class="question__info">
+                    <summary>Подсказка</summary>
+                    <p>Для информирования водителей о предстоящей смене зеленого сигнала светофора на желтый Правилами
+                        предусмотрена возможность мигания зеленого сигнала. Этот сигнал разрешает движение ТС (п. 6.2).
+                        Длительность мигания при этом должна составлять 3 сек.</p>
+                </details>
+            </section>
+            <section class="question">
+                <h3 class="question__title">Вопрос</h3>
+                <h4 class="question__question question7">Водитель обязан подавать сигналы световыми указателями поворота
+                    (рукой):
+                </h4>
+                <ol class="question__block">
+                    <li class="question__answer answer7-1"><button>Перед началом движения или перестроением.</button>
+                    </li>
+                    <li class="question__answer answer7-2"><button>Перед поворотом или разворотом.</button></li>
+                    <li class="question__answer answer7-3"><button>Перед остановкой. </button></li>
+                    <li class="question__answer answer7-4"><button>Во всех перечисленных случаях. </button></li>
+                </ol>
+                <details class="question__info">
+                    <summary>Подсказка</summary>
+                    <p>Перед началом движения, перестроением, поворотом (разворотом) и остановкой водитель обязан
+                        подавать сигналы световыми указателями поворота соответствующего направления, а если они
+                        отсутствуют или неисправны - рукой. (п. 8.1).</p>
+                </details>
+            </section>
+            <section class="question">
+                <h3 class="question__title">Вопрос</h3>
+                <div><img src="./assets/image/bilet1_8.jpg" alt=""></div>
+                <h4 class="question__question question8">Как Вам следует поступить при повороте направо?
+                </h4>
+                <ol class="question__block">
+                    <li class="question__answer answer8-1"><button>Перестроиться на правую полосу, затем осуществить
+                            поворот.</button></li>
+                    <li class="question__answer answer8-2"><button>Продолжить движение по второй полосе до перекрестка,
+                            затем повернуть.</button></li>
+                    <li class="question__answer answer8-3"><button>Возможны оба варианта действий. </button></li>
+                </ol>
+                <details class="question__info">
+                    <summary>Подсказка</summary>
+                    <p>Стрелы разметки 1.18 <img src="./assets/icon/h1.18.png" alt=""> указывают, что на данном
+                        перекрестке поворот направо может осуществляться не только с правой, но и с левой полосы.
+                        Следовательно, Вы можете выполнить поворот, либо заранее перестроившись на крайнюю правую полосу
+                        (занять крайнее правое положение), либо продолжив движение по левой полосе (п. 8.5).</p>
+                </details>
+            </section>
+
+
 
         </div>
     </div>
-    <footer></footer>
+
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>
