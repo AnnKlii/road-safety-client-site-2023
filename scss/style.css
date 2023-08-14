@@ -304,10 +304,10 @@ body {
   padding-bottom: 30px;
 }
 .contacts-main__photo {
-  width: 80px;
-  height: 100px;
   padding-left: 30px;
-  border: 1px solid black;
+}
+.contacts-main__texts {
+  padding-top: 25px;
 }
 .contacts-main__name {
   font-size: 20px;
@@ -322,7 +322,7 @@ body {
   padding-top: 100px;
   padding-left: 0;
   padding-right: 0;
-  gap: 50px;
+  gap: 40px;
   margin-bottom: 50px;
 }
 .contacts-main__items {
@@ -339,6 +339,11 @@ body {
 }
 .contacts-main__mail {
   padding-bottom: 30px;
+}
+.contacts-main__map {
+  display: flex;
+  min-height: 30vh;
+  overflow: hidden;
 }
 
 span {
