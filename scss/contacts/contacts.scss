@@ -1,4 +1,4 @@
-@import "variables.scss";
+@import "variables_contacts.scss";
 
 * {
     padding: 0;
@@ -32,7 +32,7 @@ body {
 
 .header {
     position: relative;
-    background-image: url(../assets/bg_mini.jpg);
+    background-image: url(../../assets/bg_mini.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     overflow: hidden;
@@ -135,9 +135,8 @@ body {
     }
 
     &__link {
-        color: $whitecolor;
+        color: #6666669c;
         font-weight: 500;
-        -webkit-text-stroke: 0.5px $blackcolor;
 
         &:hover {
             color: $lightochra;
@@ -221,78 +220,6 @@ body {
     }
 }
 
-.fine-main {
-    display: flex;
-    flex-direction: column;
-
-    &__title {
-        text-align: center;
-        padding-top: 100px;
-        padding-bottom: 20px;
-        color: $blackcolor;
-        text-transform: uppercase;
-        font-weight: 500;
-    }
-
-    &__text {
-        font-size: 24px;
-        font-weight: 390;
-        color: $middleblack;
-        text-align: center;
-        padding-bottom: 20px;
-    }
-}
-
-.fine-links {
-    display: flex;
-    flex-direction: column;
-    font-size: 24px;
-    font-weight: 400;
-    align-items: center;
-    row-gap: 10px;
-    padding-bottom: 100px;
-
-    &__calc {
-        border-bottom: 1px solid $middleblack;
-
-        &:hover {
-            color: $ochracolor;
-        }
-    }
-
-    &__check {
-        border-bottom: 1px solid $ochracolor;
-
-        &:hover {
-            color: $ochracolor;
-        }
-    }
-}
-
-.map-main {
-    display: flex;
-    flex-direction: column;
-
-    &__title {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        color: $blackcolor;
-        text-transform: uppercase;
-        font-weight: 500;
-    }
-
-    &__gps {
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-        margin-bottom: 50px;
-        align-items: center;
-    }
-}
-
 .contacts-main {
     display: flex;
     flex-direction: column;
@@ -366,7 +293,6 @@ body {
         overflow: hidden;
     }
 }
-
 
 span {
     color: $whitecolor;
@@ -443,7 +369,6 @@ span {
         color: red;
     }
 }
-
 
 .footer {
     background-color: $middleblack;
