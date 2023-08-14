@@ -259,10 +259,10 @@ body {
 
     &__gps {
         display: flex;
-        flex-direction: column;
+        min-height: 30vh;
         overflow: hidden;
         margin-bottom: 50px;
-        align-items: center;
+        justify-content: center;
     }
 }
 
