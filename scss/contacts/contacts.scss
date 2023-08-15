@@ -82,9 +82,12 @@ body {
         left: 25%;
 
         @media screen and (min-width: 768px) and (max-width: 1024px) {
+            position: absolute;
             top: 50%;
-            left: 25%;
-            box-shadow: 0 0 7px black;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
             background-color: #80808073;
         }
 
@@ -95,6 +98,7 @@ body {
             left: 0;
             right: 0;
             margin: auto;
+            background-color: #80808073;
         }
     }
 
@@ -107,6 +111,7 @@ body {
 
         @media screen and (min-width: 768px) and (max-width: 1024px) {
             font-size: 50px;
+            text-align: center;
         }
 
         @media screen and (max-width: 767px) {
@@ -123,14 +128,19 @@ body {
         -webkit-text-stroke: 1px $blackcolor;
 
         @media screen and (min-width: 768px) and (max-width: 1024px) {
-            -webkit-text-stroke: 1px $blackcolor;
             font-size: 18px;
             font-weight: 500;
+            color: $whitecolor;
+            -webkit-text-stroke: 0.5px $blackcolor;
+            letter-spacing: 2px;
         }
 
         @media screen and (max-width: 767px) {
             font-size: 18px;
-            font-weight: 300;
+            font-weight: 500;
+            color: $whitecolor;
+            -webkit-text-stroke: 0.5px $blackcolor;
+            letter-spacing: 2px;
         }
     }
 
@@ -284,7 +294,7 @@ body {
         padding-top: 100px;
         padding-left: 0;
         padding-right: 0;
-        gap: 50px;
+        gap: 40px;
         margin-bottom: 50px;
 
         @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -303,7 +313,7 @@ body {
     &__items {
         display: flex;
         flex-direction: column;
-        text-align: center;
+        align-items: start;
         overflow: hidden;
         row-gap: 30px;
 
@@ -319,7 +329,7 @@ body {
     }
 
     &__address {
-        padding-top: 40px;
+        padding-top: 60px;
 
         @media screen and (min-width: 768px) and (max-width: 1024px) {
             padding-top: 0;
@@ -328,6 +338,19 @@ body {
         @media screen and (max-width: 767px) {
             padding-top: 0;
         }
+    }
+
+    &__svg-address,
+    &__svg-mail,
+    &__svg-tel {
+        position: absolute;
+    }
+
+    &__street,
+    &__city,
+    &__mailto,
+    &__number-tel {
+        padding-left: 37px;
     }
 
     &__map {

@@ -79,9 +79,12 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .header__title {
+    position: absolute;
     top: 50%;
-    left: 25%;
-    box-shadow: 0 0 7px black;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     background-color: rgba(128, 128, 128, 0.4509803922);
   }
 }
@@ -93,6 +96,7 @@ body {
     left: 0;
     right: 0;
     margin: auto;
+    background-color: rgba(128, 128, 128, 0.4509803922);
   }
 }
 .header__name {
@@ -105,6 +109,7 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .header__name {
     font-size: 50px;
+    text-align: center;
   }
 }
 @media screen and (max-width: 767px) {
@@ -122,15 +127,20 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .header__text {
-    -webkit-text-stroke: 1px #130C00;
     font-size: 18px;
     font-weight: 500;
+    color: #ffffff;
+    -webkit-text-stroke: 0.5px #130C00;
+    letter-spacing: 2px;
   }
 }
 @media screen and (max-width: 767px) {
   .header__text {
     font-size: 18px;
-    font-weight: 300;
+    font-weight: 500;
+    color: #ffffff;
+    -webkit-text-stroke: 0.5px #130C00;
+    letter-spacing: 2px;
   }
 }
 .header__link {
