@@ -220,28 +220,6 @@ body {
     }
 }
 
-.fine-main {
-    display: flex;
-    flex-direction: column;
-
-    &__title {
-        text-align: center;
-        padding-top: 100px;
-        padding-bottom: 20px;
-        color: $blackcolor;
-        text-transform: uppercase;
-        font-weight: 500;
-    }
-
-    &__text {
-        font-size: 24px;
-        font-weight: 390;
-        color: $middleblack;
-        text-align: center;
-        padding-bottom: 20px;
-    }
-}
-
 .map-main {
     display: flex;
     flex-direction: column;

@@ -220,26 +220,6 @@ body {
   position: absolute;
 }
 
-.fine-main {
-  display: flex;
-  flex-direction: column;
-}
-.fine-main__title {
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 20px;
-  color: #130C00;
-  text-transform: uppercase;
-  font-weight: 500;
-}
-.fine-main__text {
-  font-size: 24px;
-  font-weight: 390;
-  color: #060606;
-  text-align: center;
-  padding-bottom: 20px;
-}
-
 .map-main {
   display: flex;
   flex-direction: column;
