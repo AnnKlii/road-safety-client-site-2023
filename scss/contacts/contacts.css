@@ -1,7 +1,6 @@
-@import 'sass/variables.scss';
 .header-pages {
   position: relative;
-  background-image: url(../assets/image/bg_mini.jpg);
+  background-image: url(../../assets/bg_mini.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -112,7 +111,6 @@
   color: #ffc443;
 }
 
-
 .dropbtn-pages {
   background-color: #FFBA00;
   color: #130C00;
@@ -217,6 +215,155 @@ span {
   position: absolute;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #060606;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+}
+
+.container {
+  padding-left: 120px;
+  padding-right: 120px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.contacts-main__contact {
+  display: flex;
+  flex-direction: column;
+}
+.contacts-main__title {
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #130C00;
+  text-transform: uppercase;
+  font-weight: 500;
+  align-items: center;
+}
+.contacts-main__block-top {
+  display: flex;
+  gap: 100px;
+  padding-bottom: 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contacts-main__block-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts-main__block-top {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0;
+  }
+}
+.contacts-main__photo {
+  display: flex;
+  padding-left: 30px;
+  min-height: 150px;
+}
+.contacts-main__texts {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+}
+.contacts-main__name {
+  font-size: 20px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.contacts-main__job {
+  margin-bottom: 10px;
+}
+.contacts-main__block-bottom {
+  display: flex;
+  padding-top: 100px;
+  padding-left: 0;
+  padding-right: 0;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contacts-main__block-bottom {
+    flex-direction: column;
+    padding-top: 0;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts-main__block-bottom {
+    flex-direction: column;
+    padding-top: 0;
+    margin-bottom: 30px;
+  }
+}
+.contacts-main__items {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  overflow: hidden;
+  row-gap: 30px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contacts-main__items {
+    align-items: center;
+    row-gap: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts-main__items {
+    align-items: center;
+    row-gap: 10px;
+  }
+}
+.contacts-main__address {
+  padding-top: 60px;
+}
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .contacts-main__address {
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contacts-main__address {
+    padding-top: 0;
+  }
+}
+.contacts-main__svg-address, .contacts-main__svg-mail, .contacts-main__svg-tel {
+  position: absolute;
+}
+.contacts-main__street, .contacts-main__city, .contacts-main__mailto, .contacts-main__number-tel {
+  padding-left: 37px;
+}
+.contacts-main__map {
+  display: flex;
+  min-height: 30vh;
+  overflow: hidden;
+  justify-content: center;
+}
+
 .footer {
   background-color: #060606;
 }
@@ -294,144 +441,4 @@ span {
   fill: #FFBA00;
   width: 20px;
   height: 20px;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-}
-
-body,
-button {
-  font-family: "Oswald", sans-serif;
-}
-
-.container {
-  padding-left: 120px;
-  padding-right: 120px;
-  margin: 0 auto;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .container {
-    padding-left: 55px;
-    padding-right: 55px;
-  }
-}
-
-.quiz {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #130C00;
-}
-.quiz__hello {
-  text-align: center;
-  margin: 80px 0 10px 0;
-  font-size: 22px;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .quiz__hello {
-    font-size: 18px;
-  }
-}
-.quiz__question {
-  display: none;
-  flex-direction: column;
-  width: 80%;
-  padding: 20px;
-  box-shadow: 2px 4px 4px 3px #676666;
-  margin-top: 20px;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .quiz__question {
-    width: 100%;
-  }
-}
-.quiz__question > div > img {
-  max-width: 100%;
-}
-.quiz__question div, .quiz__question-question {
-  text-align: center;
-}
-.quiz__question-title {
-  font-size: 36px;
-  padding-bottom: 30px;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .quiz__question-title {
-    font-size: 24px;
-  }
-}
-.quiz__question-block {
-  padding-left: 30px;
-}
-.quiz__question-question {
-  font-size: 24px;
-  padding: 20px 10px;
-  margin: 20px 0;
-  border: 1px solid #676666;
-  border-radius: 10px;
-}
-@media (min-width: 320px) and (max-width: 767px) {
-  .quiz__question-question {
-    font-size: 18px;
-  }
-}
-.quiz__question-answer {
-  padding-bottom: 10px;
-  color: #555555;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: normal;
-}
-.quiz__question-info-title {
-  color: #FFBA00;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  cursor: help;
-}
-.quiz__question-info img {
-  height: 25px;
-}
-.quiz__question-info[open] summary {
-  padding: 5px;
-  background-color: #676666;
-  margin-bottom: 10px;
-  color: #ffffff;
-  cursor: default;
-}
-.quiz__question-btn {
-  width: 100%;
-  border-radius: 10px;
-  border: 0;
-  padding: 7px;
-  background-color: #ececec;
-  font-size: 18px;
-}
-.quiz__button {
-  color: #FFBA00;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  text-decoration: none;
-}
-.quiz__button:hover {
-  color: #ffc443;
-}/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=contacts.css.map */
