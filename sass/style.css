@@ -317,8 +317,8 @@ button {
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .container {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -334,12 +334,22 @@ button {
   align-items: center;
   color: #130C00;
 }
+.quiz__hello {
+  text-align: center;
+  margin: 80px 0 10px 0;
+  font-size: 22px;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .quiz__hello {
+    font-size: 18px;
+  }
+}
 .quiz__question {
   display: none;
   flex-direction: column;
   width: 80%;
   padding: 20px;
-  box-shadow: 0px 4px 4px 0px #676666;
+  box-shadow: 2px 4px 4px 3px #676666;
   margin-top: 20px;
 }
 @media (min-width: 320px) and (max-width: 767px) {
