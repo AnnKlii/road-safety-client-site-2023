@@ -430,7 +430,7 @@ span {
   height: 20px;
 }
 
-/*---Главная articles---*/
+/*---начало: Главная-articles---*/
 
 .articles-container {
   padding-left: 15px;
@@ -467,14 +467,13 @@ span {
 }
 
 .articles-main__navigation {
-  position: relative;
-  
+position: relative;
+padding: 20px 60px;
 }
 
 .articles-main__navigation-nav-container {
   display: flex;
   gap: 40px;
-  justify-content: space-between;
   padding: 30px;
   font-size: 17px;
   font-weight:bold;
@@ -482,21 +481,24 @@ span {
   padding-top: 30px;
   margin-top: 30px;
   align-items: center;
-  justify-content: center;
+  justify-content:center;
+  border-radius: 20px;
+  background-color: #55555546;
 }
 
 .articles__nav__link {
-  color: rgba(132, 131, 131, 0.4196078431);
+  color: #130C00;
   padding-left: 30px;
   padding-right: 30px;
-  box-shadow: inset 0 0 6px;
-  border-radius: 10px;
-  
+  background-color: #1f1e1d44;
+  border-radius: 20px;
+  padding: 15px;
 }
 
 .articles__nav__link:hover {
-  color: #20201f95;
+  color:#FFBA00;
   transition: 1s;
+  background-color: #130C00;
 }
 
 .articles-main__cards {
@@ -547,134 +549,187 @@ span {
   transition: 1s;
 }
 
-/*---Законодательство---*/
-.articles-container__law {
+.articles__card-text__2 {
+  color: #FFBA00;
+  font-size: 500;
+}
+
+/*---конец:Главная-articles---*/
+
+/*---начало:articles_1_law:Законодательство---*/
+
+.articles-law {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.articles__title__law {
+.articles-law__title {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 10px;
-  margin-top: 10px;
-  color: #FFBA00;
-  
+  flex-direction: row;
+  align-items: start;
+
+  padding-left: 50px;
+  background-color: #55555546;
+  border-radius: 20px;
+  margin: 80px;
 }
 
-.articles__title__law-first-law {
+.articles-law__title-first {
   padding-bottom: 20px;
-  color:#130C00;
+  color:#000313;
   text-align: center;
   font-family: Oswald;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  background-color: #5555552c;
+  padding: 20px;
+  border-radius: 75% 0%;
 }
 
-.articles__title__law-first-law:hover {
-  color:#FFBA00;
-  transition: 1s;
-}
-
-.articles__title__law-second-law {
+.articles-law__title-second {
   font-weight: 300;
 text-align: center;
 font-size: 24px;
-color: #555;
+color: #000313;
 font-family: Oswald;
 font-style: normal; 
-  
+margin-top: 10px; 
+padding: 20px;
 }
 
-.articles__cards-law {
+.articles-law__title-first:hover {
+  background-color: #1f1e1d44;
+  transition: 1s;
+  border-radius: 0% 75%;
+}
+
+.articles:hover {
+  color: #FFBA00;
+  transition: 1s;
+}
+
+.articles-main-law__cards {
   display:grid;
   grid-template-columns:repeat(auto-fit,minmax(205px,1fr));
   gap:20px;
- 
+  grid-gap: 50px;
+  margin: 20px 80px;
+  padding-bottom: 50px;
 }
   
-.articles__card-law {
+.articles-main-law__card-law {
   display:flex;
   flex-direction:column;
   gap:40px;
   padding:20px;
   box-shadow:10px 5px 5px#e4dede;
-  border:1px soli gray;
-
+  border:1px solid gray;
+  color: #130C00;
+  font-weight: 200;
+  font-size: 18px;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .articles__card-1-title__law {
   padding-bottom: 20px;
 }
 
-
-.articles__cards-law:hover{
+.articles-main-law__card-law:hover{
   box-shadow:10px 10px 10px #676666;
 }
 
-.articles__card-text-1 {
-  text-align:center;
-  font-weight:200;
-  font-size:16px;
-  color:#555;
+summary {
+  color:rgb(235, 202, 54);
+    font-weight:500;
 }
-/*---конец Законодательство---*/
 
-/*---БДД---*/
-.articles-container__safety {
+.articles__card-text-law {
+    color:rgb(19, 19, 19);
+    font-weight: 500;
+  }
+
+/*---конец:articles_1_law:Законодательство---*/
+
+/*---начало:articles_2_safety:БДД---*/
+
+.articles-safety {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.articles__title__safety {
+.articles-safety__title {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 20px;
-  margin-top: 20px;
-  color: #FFBA00;
-  
+  flex-direction: row;
+  align-items: start;
+
+  padding-left: 50px;
+  background-color: #55555546;
+  border-radius: 20px;
+  margin: 80px;
 }
 
-.articles__title__safety-first {
+.articles-safety__title-first {
   padding-bottom: 20px;
-  color:#130C00;
+  color:#000313;
   text-align: center;
   font-family: Oswald;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  background-color: #5555552c;
+  padding: 20px;
+  border-radius: 75% 0%;
 }
 
-.articles__title__safety-second {
+.articles-safety__title-second {
   font-weight: 300;
 text-align: center;
 font-size: 24px;
-color: #555;
+color: #000313;
 font-family: Oswald;
 font-style: normal; 
-  
+margin-top: 10px; 
+padding: 20px;
 }
 
-.articles__cards-1 {
-  display: grid;
-  flex-direction: column;
-  grid-template-columns: 1 1fr;
-  padding:20px;
-  box-shadow:10px 5px 5px gray;  
+.articles-safety__title-first:hover {
+  background-color: #1f1e1d44;
+  transition: 1s;
+  border-radius: 0% 75%;
+}
+
+.articles:hover {
+  color: #FFBA00;
+  transition: 1s;
+}
+
+.articles-main-safety__cards {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(205px,1fr));
+  gap:20px;
+  grid-gap: 50px;
+  margin: 20px 80px;
+  padding-bottom: 50px;
 }
   
-.articles__card-1 {
- display: flex;
-flex-direction: column;
-font-weight:200;
-  font-size:18px;
-  text-align:center; 
-  color:#555;
+.articles-main-safety__card-law {
+  display:flex;
+  flex-direction:column;
+  gap:40px;
+  padding:20px;
+  box-shadow:10px 5px 5px#e4dede;
+  border:1px solid gray;
+  color: #130C00;
+  font-weight: 200;
+  font-size: 18px;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .articles__card-1-title__safety {
@@ -682,70 +737,97 @@ font-weight:200;
 }
 
 
-.articles__cards-1:hover{
+.articles-main-law__card-safety:hover{
   box-shadow:10px 10px 10px #676666;
 }
 
-.articles__card-text-1 {
-  text-align:center;
-  font-weight:200;
-  font-size:16px;
-  color:#555;
+summary {
+  color:rgb(235, 202, 54);
+    font-weight:500;
 }
-/*---конец БДД---*/
 
-/*---Прочее---*/
-.articles-container__other {
+.articles__card-text-safety {
+    color:rgb(235, 202, 54);
+    font-weight: 500;
+  }
+
+/*---конец:articles_2_safety:БДД---*/
+
+/*---начало:articles_3_other:Прочее---*/
+
+.articles-other {
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.articles__title__other {
+.articles-other__title {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 20px;
-  margin-top: 20px;
-  color: #FFBA00;
-  
+  flex-direction: row;
+  align-items: start;
+  padding-left: 50px;
+  background-color: #55555546;
+  border-radius: 20px;
+  margin: 80px;
 }
 
-.articles__title__other-first {
+.articles-other__title-first {
   padding-bottom: 20px;
-  color:#130C00;
+  color:#000313;
   text-align: center;
   font-family: Oswald;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  background-color: #5555552c;
+  padding: 20px;
+  border-radius: 75% 0%;
 }
 
-.articles__title__other-second {
+.articles-other__title-second {
   font-weight: 300;
 text-align: center;
 font-size: 24px;
-color: #555;
+color: #000313;
 font-family: Oswald;
 font-style: normal; 
-  
+margin-top: 10px; 
+padding: 20px;
 }
 
-.articles__cards-other {
-  display: grid;
-  flex-direction: column;
-  grid-template-columns: 1 1fr;
-  padding:20px;
-  box-shadow:10px 5px 5px gray;  
+.articles-other__title-first:hover {
+  background-color: #1f1e1d44;
+  transition: 1s;
+  border-radius: 0% 75%;
+}
+
+.articles:hover {
+  color: #FFBA00;
+  transition: 1s;
+}
+
+.articles-main-other__cards {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(205px,1fr));
+  gap:20px;
+  grid-gap: 50px;
+  margin: 20px 80px;
+  padding-bottom: 50px;
 }
   
-.articles__card-other {
- display: flex;
-flex-direction: column;
-font-weight:200;
-  font-size:18px;
-  text-align:center; 
-  color:#555;
+.articles-main-other__card-law {
+  display:flex;
+  flex-direction:column;
+  gap:40px;
+  padding:20px;
+  box-shadow:10px 5px 5px#e4dede;
+  border:1px solid gray;
+  color: #130C00;
+  font-weight: 200;
+  font-size: 18px;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .articles__card-1-title__other {
@@ -753,16 +835,21 @@ font-weight:200;
 }
 
 
-.articles__cards-other:hover{
+.articles-main-law__card-other:hover{
   box-shadow:10px 10px 10px #676666;
 }
 
-.articles__card-text-1 {
-  text-align:center;
-  font-weight:200;
-  font-size:16px;
-  color:#555;
+summary {
+  color:rgb(235, 202, 54);
+    font-weight:500;
 }
+
+.articles__card-text-other {
+    color:rgb(235, 202, 54);
+    font-weight: 500;
+}
+/*---конец:articles_3_other:Прочее---*/
+
 
 
 
