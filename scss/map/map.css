@@ -34,7 +34,7 @@
 }
 .header-pages__title {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 25%;
 }
 @media screen and (min-width: 1500px) {

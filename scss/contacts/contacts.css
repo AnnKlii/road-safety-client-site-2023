@@ -34,7 +34,7 @@
 }
 .header-pages__title {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 25%;
 }
 @media screen and (min-width: 1500px) {
@@ -468,4 +468,33 @@ body {
   fill: #FFBA00;
   width: 20px;
   height: 20px;
+}
+
+.main-about {
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.main-about__title {
+  text-align: center;
+  font-size: 30px;
+}
+@media screen and (max-width: 767px) {
+  .main-about__title {
+    font-size: 24px;
+  }
+}
+.main-about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.main-about__discribe {
+  font-size: 24px;
+}
+
+.main-discribe {
+  font-size: 36px;
+  text-decoration: underline;
 }/*# sourceMappingURL=contacts.css.map */
