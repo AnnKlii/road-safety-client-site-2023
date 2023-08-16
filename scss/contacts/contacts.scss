@@ -1,5 +1,5 @@
-@import url(../variables.scss);
-@import url(../header-pages.scss);
+@import '../variables.scss';
+@import '../../style/header.scss';
 
 
 * {
@@ -51,6 +51,7 @@ body {
         display: flex;
         gap: 100px;
         padding-bottom: 30px;
+        justify-content: space-around;
 
         @media screen and (min-width: 768px) and (max-width: 1024px) {
             flex-direction: column;
@@ -96,6 +97,7 @@ body {
         padding-right: 0;
         gap: 40px;
         margin-bottom: 50px;
+        justify-content: space-around;
 
         @media screen and (min-width: 768px) and (max-width: 1024px) {
             flex-direction: column;
@@ -155,7 +157,6 @@ body {
 
     &__map {
         display: flex;
-        min-height: 30vh;
         overflow: hidden;
         justify-content: center;
     }

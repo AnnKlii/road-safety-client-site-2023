@@ -36,8 +36,14 @@
 
     &__title {
         position: absolute;
-        top: 40%;
+        top: 30%;
         left: 25%;
+
+        @media screen and (min-width: 1500px) {
+            right: 30%;
+            left: 30%;
+            text-align: center;
+        }
 
         @media screen and (min-width: 768px) and (max-width: 1024px) {
             position: absolute;
@@ -58,6 +64,13 @@
             margin: auto;
             background-color: #80808073;
         }
+
+        @media screen and (min-width: 1500px) {
+            right: 30%;
+            left: 30%;
+            text-align: center;
+        }
+
     }
 
     &__name {
@@ -75,6 +88,10 @@
         @media screen and (max-width: 767px) {
             font-size: 30px;
             text-align: center;
+        }
+
+        @media screen and (min-width: 1500px) {
+            -webkit-text-stroke: 3px $blackcolor;
         }
     }
 
@@ -99,6 +116,12 @@
             color: $whitecolor;
             -webkit-text-stroke: 0.5px $blackcolor;
             letter-spacing: 2px;
+        }
+
+        @media screen and (min-width: 1500px) {
+            font-size: 34px;
+            font-weight: 400;
+            -webkit-text-stroke: 2px $blackcolor;
         }
     }
 
