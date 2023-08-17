@@ -199,7 +199,7 @@
                             d="M12 2C7.589 2 4 5.589 4 9.995 3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12 0-4.411-3.589-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" />
                     </svg> Калининградская обл, г.о. город Калининград, г Калининград, ул Коммунальная, д. 4-6, помещ.
                     IV/4</p>
-                <p class="footer__address footer__text"><svg class="address_img" data-name="Livello 1" id="Livello_1"
+                <p class="footer__address footer__text"><svg class="address_img" data-name="Livello 1" id="Livello_11"
                         viewBox="0 0 129 128" xmlns="http://www.w3.org/2000/svg">
                         <title />
                         <path
@@ -207,12 +207,12 @@
                         <path
                             d="M113,19H15A15,15,0,0,0,0,34V94a15,15,0,0,0,15,15h98a15,15,0,0,0,15-15V34A15,15,0,0,0,113,19Zm9,75a9,9,0,0,1-9,9H15a9,9,0,0,1-9-9V34a9,9,0,0,1,9-9h98a9,9,0,0,1,9,9Z" />
                     </svg><a class="footer__links" href="mailto:okbdd39@mail.ru">okbdd39@mail.ru</a> </p>
-                <p class="footer__address footer__text"><svg class="address_img" version="1.1" id="Capa_1"
+                <p class="footer__address footer__text"><svg class="address_img" version="1.1" id="Capa_11"
                         xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                         fill="white" width="10px" height="10px" viewBox="0 0 612 612"
                         style="enable-background:new 0 0 612 612;" xml:space="preserve">
                         <g>
-                            <g id="Phone">
+                            <g id="Phonee">
                                 <g>
                                     <path
                                         d="M559.959,383.188l-99.145-50.93c-24.27-12.508-55.653-8.243-75.772,10.251l-11.571,10.595
@@ -278,6 +278,25 @@
             </div>
         </div>
     </footer>
+    <script>
+        function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn-pages')) {
+
+    let dropdowns = document.getElementsByClassName("dropdown-contents");
+    let i;
+    for (i = 0; i < dropdowns.length; i++) {
+    let openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+    }
+    }
+}
+}
+    </script>
 </body>
 
 </html>
