@@ -13,6 +13,10 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style: none;
+}
+
 body,
 button {
     font-family: 'Oswald', sans-serif;
@@ -105,6 +109,7 @@ button {
         font-style: normal;
         font-weight: 300;
         line-height: normal;
+        list-style: decimal;
     }
 
     &__question-info-title {

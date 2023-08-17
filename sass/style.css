@@ -1,4 +1,3 @@
-@import 'sass/variables.scss';
 .header-pages {
   position: relative;
   background-image: url(../assets/image/bg_mini.jpg);
@@ -111,7 +110,6 @@
 .header-pages__link:hover {
   color: #ffc443;
 }
-
 
 .dropbtn-pages {
   background-color: #FFBA00;
@@ -306,6 +304,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 body,
 button {
   font-family: "Oswald", sans-serif;
@@ -395,6 +397,7 @@ button {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  list-style: decimal;
 }
 .quiz__question-info-title {
   color: #FFBA00;

@@ -39,7 +39,7 @@
 @media screen and (min-width: 1500px) {
   .footer__left {
     max-width: 400px;
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -57,7 +57,7 @@
 }
 @media screen and (min-width: 1500px) {
   .footer_right {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 .footer__address {
@@ -72,7 +72,7 @@
 }
 @media screen and (min-width: 1500px) {
   .footer__center {
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 .footer_title {
