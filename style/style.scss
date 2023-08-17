@@ -83,18 +83,20 @@ z-index: 3;
 
     &__title {
         position: absolute;
-    top: 40%;
-    left: 25%;
+        top: 40%;
+        left: 15%;
+        right: 15%;
+        text-align: center;
 
     @media screen and (min-width: 1500px) {
         right: 30%;
         left: 30%;
-        text-align: center;
     }
 
     @media screen and (min-width: 768px) and (max-width: 1024px) {
         top: 50%;
         left: 25%;
+        right: 25%;
         box-shadow: 0 0 7px black;
         background-color: #80808073;
     }
@@ -106,6 +108,7 @@ z-index: 3;
         right: 0;
         margin: auto;
         background-color: #80808075;
+        right: 0;
     }
     }
 
@@ -195,9 +198,14 @@ z-index: 3;
         display: block;
     }
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 768px) and (min-width: 597px) {
+        left: 85%;
+    }
+
+    @media screen and (max-width: 596px) {
         margin-top: 30px;
-    left: 70%;
+        margin-top: 30px;
+        left: 75%;
     }
 }
 

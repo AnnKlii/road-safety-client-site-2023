@@ -22,6 +22,8 @@
 .footer__text {
   color: #ffffff;
   font-weight: 200;
+  display: flex;
+  gap: 10px;
 }
 @media screen and (max-width: 767px) {
   .footer__text {
@@ -178,19 +180,21 @@ body {
 .header__title {
   position: absolute;
   top: 40%;
-  left: 25%;
+  left: 15%;
+  right: 15%;
+  text-align: center;
 }
 @media screen and (min-width: 1500px) {
   .header__title {
     right: 30%;
     left: 30%;
-    text-align: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .header__title {
     top: 50%;
     left: 25%;
+    right: 25%;
     box-shadow: 0 0 7px black;
     background-color: rgba(128, 128, 128, 0.4509803922);
   }
@@ -204,6 +208,7 @@ body {
     right: 0;
     margin: auto;
     background-color: rgba(128, 128, 128, 0.4588235294);
+    right: 0;
   }
 }
 .header__name {
@@ -298,10 +303,16 @@ body {
     display: block;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) and (min-width: 597px) {
+  .dropdown {
+    left: 85%;
+  }
+}
+@media screen and (max-width: 596px) {
   .dropdown {
     margin-top: 30px;
-    left: 70%;
+    margin-top: 30px;
+    left: 75%;
   }
 }
 
