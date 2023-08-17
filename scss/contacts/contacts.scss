@@ -1,5 +1,5 @@
-@import url(../variables.scss);
-@import url(../header-pages.scss);
+@import '../variables.scss';
+@import '../../style/header.scss';
 
 
 * {
@@ -45,12 +45,14 @@ body {
         text-transform: uppercase;
         font-weight: 500;
         align-items: center;
+
     }
 
     &__block-top {
         display: flex;
         gap: 100px;
         padding-bottom: 30px;
+        justify-content: space-around;
 
         @media screen and (min-width: 768px) and (max-width: 1024px) {
             flex-direction: column;
@@ -83,11 +85,27 @@ body {
         font-size: 20px;
         font-weight: 500;
         padding-bottom: 10px;
+
+        @media screen and (min-width: 1500px) {
+            font-size: 32px;
+        }
     }
 
     &__job {
         margin-bottom: 10px;
+
+        @media screen and (min-width: 1500px) {
+            font-size: 26px;
+        }
     }
+
+    &__tel {
+        @media screen and (min-width: 1500px) {
+            font-size: 26px;
+        }
+
+    }
+
 
     &__block-bottom {
         display: flex;
@@ -96,6 +114,7 @@ body {
         padding-right: 0;
         gap: 40px;
         margin-bottom: 50px;
+        justify-content: space-around;
 
         @media screen and (min-width: 768px) and (max-width: 1024px) {
             flex-direction: column;
@@ -138,6 +157,10 @@ body {
         @media screen and (max-width: 767px) {
             padding-top: 0;
         }
+
+        @media screen and (min-width: 1500px) {
+            font-size: 26px;
+        }
     }
 
     &__svg-address,
@@ -151,11 +174,14 @@ body {
     &__mailto,
     &__number-tel {
         padding-left: 37px;
+
+        @media screen and (min-width: 1500px) {
+            font-size: 26px;
+        }
     }
 
     &__map {
         display: flex;
-        min-height: 30vh;
         overflow: hidden;
         justify-content: center;
     }
@@ -247,3 +273,38 @@ body {
     width: 20px;
     height: 20px;
 }
+
+// здесь начинаются стили страницы about_us
+
+.main-about {
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    &__title {
+        text-align: center;
+        font-size: 30px;
+
+        @media screen and (max-width: 767px) {
+            font-size: 24px;
+        }
+    }
+
+    &__text {
+        display: flex;
+    flex-direction: column;
+    gap: 10px;
+    }
+
+    &__discribe {
+        font-size: 24px;
+    }
+}
+
+.main-discribe {
+    font-size: 36px;
+    text-decoration: underline;
+}
+
+// здесь заканчиваются стили страницы about_us

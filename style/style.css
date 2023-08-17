@@ -22,6 +22,8 @@
 .footer__text {
   color: #ffffff;
   font-weight: 200;
+  display: flex;
+  gap: 10px;
 }
 @media screen and (max-width: 767px) {
   .footer__text {
@@ -178,19 +180,21 @@ body {
 .header__title {
   position: absolute;
   top: 40%;
-  left: 25%;
+  left: 15%;
+  right: 15%;
+  text-align: center;
 }
 @media screen and (min-width: 1500px) {
   .header__title {
     right: 30%;
     left: 30%;
-    text-align: center;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .header__title {
     top: 50%;
     left: 25%;
+    right: 25%;
     box-shadow: 0 0 7px black;
     background-color: rgba(128, 128, 128, 0.4509803922);
   }
@@ -204,6 +208,7 @@ body {
     right: 0;
     margin: auto;
     background-color: rgba(128, 128, 128, 0.4588235294);
+    right: 0;
   }
 }
 .header__name {
@@ -260,6 +265,7 @@ body {
 .header__link {
   color: #ffffff;
   font-weight: 500;
+  transition: color 1s ease-in-out;
 }
 .header__link:hover {
   color: #ffc443;
@@ -278,6 +284,7 @@ body {
   font-size: 16px;
   border: none;
   cursor: pointer;
+  transition: background-color 1s ease-in-out;
 }
 
 .dropbtn:hover, .dropbtn:focus {
@@ -296,9 +303,20 @@ body {
     display: block;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) and (min-width: 597px) {
   .dropdown {
-    margin-top: 30px;
+    left: 85%;
+  }
+}
+@media screen and (max-width: 596px) {
+  .dropdown {
+    margin-top: 20px;
+    left: 75%;
+  }
+}
+@media screen and (max-width: 321px) {
+  .dropdown {
+    margin-top: 20px;
     left: 70%;
   }
 }
@@ -323,6 +341,7 @@ body {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  transition: background-color 1s ease-in-out;
 }
 
 .dropdown a:hover {
@@ -523,6 +542,7 @@ span {
 
 .sub_link {
   color: white;
+  transition: color 1s ease-in-out;
 }
 .sub_link:hover {
   color: #FFBA00;
@@ -590,7 +610,7 @@ span {
   border-radius: 15%;
   align-self: center;
   font-size: 20px;
-  color: black;
+  color: #130C00;
 }
 @media screen and (max-width: 767px) {
   .test__button {

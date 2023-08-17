@@ -22,6 +22,8 @@
 .footer__text {
   color: #ffffff;
   font-weight: 200;
+  display: flex;
+  gap: 10px;
 }
 @media screen and (max-width: 767px) {
   .footer__text {

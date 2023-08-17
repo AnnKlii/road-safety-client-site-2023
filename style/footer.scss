@@ -24,10 +24,12 @@
         &__text {
             color: $whitecolor;
             font-weight: 200;
+            display: flex;
+            gap: 10px;
             @media screen and (max-width: 767px) {
             display: flex;
-        gap: 10px;
-        justify-content: center;
+            gap: 10px;
+            justify-content: center;
             }
         }
         &__left {
