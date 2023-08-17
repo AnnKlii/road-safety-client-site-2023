@@ -34,7 +34,7 @@
 }
 .header-pages__title {
   position: absolute;
-  top: 40%;
+  top: 30%;
   left: 25%;
 }
 @media screen and (min-width: 1500px) {
@@ -321,8 +321,23 @@ body {
   font-weight: 500;
   padding-bottom: 10px;
 }
+@media screen and (min-width: 1500px) {
+  .contacts-main__name {
+    font-size: 32px;
+  }
+}
 .contacts-main__job {
   margin-bottom: 10px;
+}
+@media screen and (min-width: 1500px) {
+  .contacts-main__job {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .contacts-main__tel {
+    font-size: 26px;
+  }
 }
 .contacts-main__block-bottom {
   display: flex;
@@ -379,11 +394,21 @@ body {
     padding-top: 0;
   }
 }
+@media screen and (min-width: 1500px) {
+  .contacts-main__address {
+    font-size: 26px;
+  }
+}
 .contacts-main__svg-address, .contacts-main__svg-mail, .contacts-main__svg-tel {
   position: absolute;
 }
 .contacts-main__street, .contacts-main__city, .contacts-main__mailto, .contacts-main__number-tel {
   padding-left: 37px;
+}
+@media screen and (min-width: 1500px) {
+  .contacts-main__street, .contacts-main__city, .contacts-main__mailto, .contacts-main__number-tel {
+    font-size: 26px;
+  }
 }
 .contacts-main__map {
   display: flex;
