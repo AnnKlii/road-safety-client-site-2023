@@ -203,9 +203,13 @@ z-index: 3;
     }
 
     @media screen and (max-width: 596px) {
-        margin-top: 30px;
-        margin-top: 30px;
+        margin-top: 20px;
         left: 75%;
+    }
+
+    @media screen and (max-width: 321px) {
+        margin-top: 20px;
+        left: 70%;
     }
 }
 
