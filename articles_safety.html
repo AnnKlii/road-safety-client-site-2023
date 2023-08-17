@@ -41,9 +41,9 @@
           </li>
           <li class="header__link-block"><a class="header__link" href="/Articles.html">Статьи</a>
             <ul class="sub-menu">
-              <li><a class="sub_link" href="/articles_1_law.html">Законодательство</a></li>
-              <li><a class="sub_link" href="/articles_2_safety.html">БДД</a></li>
-              <li><a class="sub_link" href="/articles-3_other.html">Прочее</a></li>
+              <li><a class="sub_link" href="/articles_law.html">Законодательство</a></li>
+              <li><a class="sub_link" href="/articles_safety.html">БДД</a></li>
+              <li><a class="sub_link" href="/articles_other.html">Прочее</a></li>
             </ul>
           </li>
           <li class="header__link-block"><a class="header__link" href="./map.html">Карта</a></li>
@@ -110,7 +110,7 @@
             <details>
               <summary>Читать</summary>
               <p class="fig">
-                <img src="/Img/1_2_png.png" alt="traffic" style="width:50%">
+                <img src="/Img/1_2_png.png" alt="traffic" style="width:100%">
               </p>
               <p>
                 2. Жертвы на&nbsp;дорогах:
@@ -125,7 +125,7 @@
                 мужчины, составляющие
                 ключевую составляющую общественного и&nbsp;национального прогресса.</p>
               <p class="fig">
-                <img src="/Img/1_3_png.png" alt="traffic" style="width:50%">
+                <img src="/Img/1_3_png.png" alt="traffic" style="width:100%">
               </p>
               <p>
                 3. Отставание Инфраструктуры:
@@ -138,7 +138,7 @@
                 устаревшую сущность на&nbsp;фоне растущего числа автомобилей и&nbsp;их&nbsp;увеличивающихся скоростных
                 характеристик.</p>
               <p class="fig">
-                <img src="/Img/1_4_traffic-2_png.png" alt="traffic" style="width:50%">
+                <img src="/Img/1_4_traffic-2_png.png" alt="traffic" style="width:100%">
               </p>
               <p>
                 4.Городская Нагрузка:
@@ -152,7 +152,7 @@
                 и&nbsp;областных
                 центрах страны.</p>
               <p class="fig">
-                <img src="/Img/1_5_pay_and_go_png.png" alt="traffic" style="width:50%">
+                <img src="/Img/1_5_pay_and_go_png.png" alt="traffic" style="width:100%">
               </p>
               <p>
                 5. Плата за&nbsp;участие:
@@ -164,7 +164,7 @@
                 и
                 привлечению долгосрочных инвесторов в&nbsp;эту сферу.</p>
               <p class="fig">
-                <img src="/Img/1_6_left-right_png.png" alt="traffic" style="width:50%">
+                <img src="/Img/1_6_left-right_png.png" alt="traffic" style="width:100%">
               </p>
               <p>
                 6. Недисциплинированные участники движения:
@@ -206,7 +206,7 @@
             <details>
               <summary>Читать</summary>
               <p class="fig">
-                <img src="/Img/2_2_png.png" alt="traffic" style="width:50%">
+                <img src="/Img/2_2_png.png" alt="traffic" style="width:100%">
               </p>
               <p>Машины могут быть починены, штрафы оплачены, но&nbsp;душевные раны
                 исцелить
@@ -254,7 +254,7 @@
                 чем любая спешка или
                 нетерпимость.</p>
               <p class="fig">
-                <img src="/Img/2_3_png.png" alt="traffic" style="width:50%">
+                <img src="/Img/2_3_png.png" alt="traffic" style="width:100%">
               </p>
             </details>
           </div>
@@ -293,7 +293,7 @@
                 безопасности
                 на&nbsp;дороге поможет сократить количество происшествий с&nbsp;участием детей.
               <p class="fig">
-                <img src="/Img/3_3_png.png" alt="traffic" style="width:50%">
+                <img src="/Img/3_3_png.png" alt="traffic" style="width:100%">
               </p>
               <p>Однако именно родители несут ответственность, за&nbsp;то&nbsp;что должен знать ребёнок, когда
                 он&nbsp;становится
@@ -328,7 +328,7 @@
                 в
                 городе-миллионнике.
               <p class="fig">
-                <img src="/Img/3_4_png.png" alt="traffic" style="width:50%">
+                <img src="/Img/3_4_png.png" alt="traffic" style="width:100%">
               </p>
               <p>ПДД для детей&nbsp;&mdash; это конкретный свод правил и&nbsp;предостережений, который помогает
                 уберечь ребёнка от&nbsp;опасностей большого города. Выученные назубок, многократно повторённые,
@@ -342,7 +342,7 @@
                 в&nbsp;садик ребёнка наверняка водит или возит родитель или старший родственник!
               </p>
               <p class="fig">
-                <img src="/Img/3_5_png.png" alt="traffic" style="width:50%">
+                <img src="/Img/3_5_png.png" alt="traffic" style="width:100%">
               </p>
             </details>
           </div>
@@ -418,6 +418,26 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+
+        let dropdowns = document.getElementsByClassName("dropdown-content");
+        let i;
+        for (i = 0; i < dropdowns.length; i++) {
+          let openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
 
 </body>
 
