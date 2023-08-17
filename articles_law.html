@@ -100,7 +100,7 @@
               года в
               России заработает обновленный перечень неисправностей автомобилей, за&nbsp;которые запрещена
               их&nbsp;эксплуатация.
-              Если попадетесь на&nbsp;них первые раз, то&nbsp;получите штраф 500&nbsp;рублей. Инспектор может
+              Если попадетесь на&nbsp;них первый раз, то&nbsp;получите штраф 500&nbsp;рублей. Инспектор может
               выписать
               предписание об
               устранении этих неисправностей. Если не&nbsp;выполните его, то&nbsp;грозит арест
@@ -127,7 +127,7 @@
                 панели
                 горит лампа
                 неисправности АБС.
-                Запрещен любыу изменения, связанные во&nbsp;световыми приборами. Это касается не&nbsp;только
+                Запрещены любые изменения, связанные со&nbsp;световыми приборами. Это касается не&nbsp;только
                 &laquo;самопального&raquo; ксенона в
                 фарах. Это относиться ко&nbsp;всему, что обычно любят ставить на&nbsp;&laquo;боевой
                 классике&raquo;
@@ -157,7 +157,7 @@
 
       <div class="articles-main-law__card-law">
         <div class="articles__card-titlecard">
-          <h3><a class="articles__card-titlecard"><b>Не много о Правилах дорожного
+          <h3><a class="articles__card-titlecard"><b>Немного о Правилах дорожного
                 движения</b></a></h3>
           <div class="articles__card-text">
             <p>Согласно законодательству управлять автомобилем можно при условии наличия водительского
@@ -167,7 +167,7 @@
               к&nbsp;которой следует готовиться, как
               к&nbsp;любому другому экзамену, и&nbsp;практическую&nbsp;&mdash; применение всех полученных
               в&nbsp;автошколе
-              знаний, но&nbsp;уже без помощи инструктора.Знания ПДД&nbsp;&mdash; это основа безопасного движения
+              знаний, но&nbsp;уже без помощи инструктора. Знания ПДД&nbsp;&mdash; это основа безопасного движения
               по&nbsp;дорогам общего пользования. Если не&nbsp;усвоить
               основные положения ПДД, сдать на&nbsp;права не&nbsp;получится. Материала много, а&nbsp;времени мало.
               Поэтому
@@ -264,6 +264,25 @@
       </div>
     </div>
   </footer>
+  <script>
+    function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+    }
+
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+
+        let dropdowns = document.getElementsByClassName("dropdown-content");
+        let i;
+        for (i = 0; i < dropdowns.length; i++) {
+          let openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+  </script>
 
 </body>
 
