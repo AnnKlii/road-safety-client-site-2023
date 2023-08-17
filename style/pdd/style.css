@@ -315,6 +315,13 @@ body {
   padding-top: 20px;
   padding-left: 20px;
 }
+
+@media screen and (max-width: 767px) {
+  .mystery_container-supertitle {
+    font-weight: 20px;
+    padding-left: 10px ;
+  }
+
 }
 
 .mystery_container-my1, .mystery_container-my2{
