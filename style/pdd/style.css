@@ -296,6 +296,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   padding-top: 50px;
   grid-gap: 130px;
+  justify-content: center;
   
 }
 .main__pddchild-foto:hover{
@@ -399,6 +400,7 @@ padding-top: 3px;
   }
 
   /* памятка*/
+ 
 }
 .main_container-pam-content {
   display: grid;
@@ -406,7 +408,7 @@ padding-top: 3px;
   padding-top: 100px;
   grid-column-gap: 120px;
   grid-row-gap: 20px;
-  
+  justify-content: center;
 }
 @media screen and (min-width: 768px) and (max-width: 1024px)  {
   .main_container-pam-content {
