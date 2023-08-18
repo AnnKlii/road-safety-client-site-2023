@@ -218,7 +218,7 @@ body {
 }
 @media screen and (min-width: 1500px) {
   .header__name {
-    font-weight: 700;
+    font-weight: 600;
     -webkit-text-stroke: 3px #130C00;
   }
 }
