@@ -276,15 +276,13 @@ body {
 
 .main__title{
   color: firebrick;
-  padding-left: 550px;
+  text-align: center;
   padding-top: 50px;
 }
 
 @media screen and  (min-width: 768px) and (max-width: 1024px)  {
   .main__title {
-    font-size: 15px;
-    padding-left: 66px;
-    padding-top: 10px;
+    font-size: 10px;
   }
 }
 
@@ -321,7 +319,7 @@ body {
   padding-top: 50px;
   font-size: 2em;
   font-size: bolder;
-  padding-left: 500px ;
+  padding-left: 300px ;
 }
 .mystery_container-my1--title{
   padding-top: 20px;
@@ -393,11 +391,11 @@ body {
   font-size: bolder;
   padding-top: 50px;
   padding-bottom: 40px;
-  padding-left: 500px;}
+  text-align: center;}
 
   @media screen and  (min-width: 768px) and (max-width: 1024px)  {
     .main_container-pam-title {
-      font-size: 25px;
+      font-size: 20px;
       padding-left: 1px;
       padding-bottom: 20px
     }}
@@ -407,10 +405,11 @@ body {
 }
 
 @media screen and  (min-width: 768px) and (max-width: 1024px)  {
-  .main_container-pam-text{
-    font-size: 15px;
-   padding: 1px;
-  }}
+  .main_container-pam-text {
+    font-size: 5px;
+  }
+
+  }
 
 /* футер */
 .footer {
