@@ -87,7 +87,7 @@ z-index: 3;
         right: 15%;
         text-align: center;
 
-    @media screen and (min-width: 1500px) {
+    @media screen and (min-width: 1450px) {
         right: 30%;
         left: 30%;
         top: 30%;
@@ -117,7 +117,7 @@ z-index: 3;
         text-transform: uppercase;
         -webkit-text-stroke: 1px $blackcolor;
 
-        @media screen and (min-width: 1500px) {
+        @media screen and (min-width: 1450px) {
             font-weight: 600;
             -webkit-text-stroke: 3px $blackcolor;
         }

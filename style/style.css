@@ -183,7 +183,7 @@ body {
   right: 15%;
   text-align: center;
 }
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1450px) {
   .header__title {
     right: 30%;
     left: 30%;
@@ -216,7 +216,7 @@ body {
   text-transform: uppercase;
   -webkit-text-stroke: 1px #130C00;
 }
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1450px) {
   .header__name {
     font-weight: 600;
     -webkit-text-stroke: 3px #130C00;
