@@ -297,11 +297,14 @@ span {
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 a {
   text-decoration: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 body,
@@ -314,16 +317,10 @@ button {
   padding-right: 120px;
   margin: 0 auto;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 1024px) {
   .container {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .container {
-    padding-left: 55px;
-    padding-right: 55px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -393,6 +390,7 @@ button {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  list-style: decimal;
 }
 .quiz__question-info-title {
   color: #FFBA00;
