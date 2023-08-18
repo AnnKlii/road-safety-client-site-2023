@@ -190,8 +190,12 @@ body {
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .header__title {
+    position: absolute;
     top: 50%;
-    box-shadow: 0 0 7px black;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
     background-color: rgba(128, 128, 128, 0.4509803922);
   }
 }
@@ -268,7 +272,7 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .header {
-    background: url("../assets/image/bg_mini.jpg") center center/cover no-repeat;
+    background: url("../assets/image/bg_mini.jpg") left center/cover no-repeat;
   }
 }
 
@@ -329,6 +333,7 @@ body {
 @media screen and (max-width: 1024px) {
   .dropdown-content {
     min-width: 80px;
+    right: 1px;
   }
 }
 
