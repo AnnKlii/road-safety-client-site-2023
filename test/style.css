@@ -307,8 +307,7 @@ li {
   list-style-type: none;
 }
 
-body,
-button {
+body {
   font-family: "Oswald", sans-serif;
 }
 
@@ -417,6 +416,7 @@ button {
   padding: 7px;
   background-color: #ececec;
   font-size: 18px;
+  font-family: "Oswald", sans-serif;
 }
 .quiz__button {
   color: #FFBA00;
