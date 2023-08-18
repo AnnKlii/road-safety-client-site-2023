@@ -1,12 +1,11 @@
 @import '../style/header.scss';
-// @import '../style/variables.scss';
+@import '../style/variables.scss';
 @import '../style/footer.scss';
 
 
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
 }
 
 a {
@@ -101,7 +100,7 @@ body {
 
 .articles-main__cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
   grid-gap: 50px;
   padding-bottom: 50px;
   padding-left: 50px;
