@@ -74,7 +74,7 @@
   }
 }
 .header-pages__name {
-  color: black;
+  color: #130C00;
   font-weight: 700;
   font-size: 70px;
   text-transform: uppercase;
@@ -97,7 +97,7 @@
   }
 }
 .header-pages__text {
-  color: black;
+  color: #130C00;
   font-weight: 400;
   text-align: center;
   font-size: 26px;
@@ -106,7 +106,7 @@
   .header-pages__text {
     font-size: 18px;
     font-weight: 500;
-    color: white;
+    color: #130C00;
     -webkit-text-stroke: 0.5px #130C00;
     letter-spacing: 2px;
   }
@@ -115,7 +115,7 @@
   .header-pages__text {
     font-size: 18px;
     font-weight: 500;
-    color: #ffffff;
+    color: #130C00;
     -webkit-text-stroke: 0.5px #130C00;
     letter-spacing: 2px;
   }
