@@ -1,6 +1,6 @@
 .header-pages {
   position: relative;
-  background-image: url(//assets/image/bg_mini.jpg);
+  background-image: url(../../assets/bg_mini.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -74,7 +74,7 @@
   }
 }
 .header-pages__name {
-  color: #ffffff;
+  color: #130C00;
   font-weight: 700;
   font-size: 70px;
   text-transform: uppercase;
@@ -98,7 +98,7 @@
   }
 }
 .header-pages__text {
-  color: #ffffff;
+  color: #130C00;
   font-weight: 400;
   text-align: center;
   font-size: 26px;
@@ -108,7 +108,7 @@
   .header-pages__text {
     font-size: 18px;
     font-weight: 500;
-    color: #ffffff;
+    color: #130C00;
     -webkit-text-stroke: 0.5px #130C00;
     letter-spacing: 2px;
   }
@@ -117,7 +117,7 @@
   .header-pages__text {
     font-size: 18px;
     font-weight: 500;
-    color: #ffffff;
+    color: #130C00;
     -webkit-text-stroke: 0.5px #130C00;
     letter-spacing: 2px;
   }

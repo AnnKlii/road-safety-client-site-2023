@@ -1,3 +1,5 @@
+@import 'variables.scss';
+
 .header-pages {
     position: relative;
     background-image: url(../../assets/bg_mini.jpg);
@@ -74,7 +76,7 @@
     }
 
     &__name {
-        color: $whitecolor;
+        color: $blackcolor;
         font-weight: 700;
         font-size: 70px;
         text-transform: uppercase;
@@ -96,7 +98,7 @@
     }
 
     &__text {
-        color: $whitecolor;
+        color: $blackcolor;
         font-weight: 400;
         text-align: center;
         font-size: 26px;
@@ -105,7 +107,7 @@
         @media screen and (min-width: 768px) and (max-width: 1024px) {
             font-size: 18px;
             font-weight: 500;
-            color: $whitecolor;
+            color: $blackcolor;
             -webkit-text-stroke: 0.5px $blackcolor;
             letter-spacing: 2px;
         }
@@ -113,7 +115,7 @@
         @media screen and (max-width: 767px) {
             font-size: 18px;
             font-weight: 500;
-            color: $whitecolor;
+            color: $blackcolor;
             -webkit-text-stroke: 0.5px $blackcolor;
             letter-spacing: 2px;
         }
