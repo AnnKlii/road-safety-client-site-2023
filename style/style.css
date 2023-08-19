@@ -196,7 +196,8 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    background-color: rgba(128, 128, 128, 0.4509803922);
+    -webkit-backdrop-filter: blur(1px);
+            backdrop-filter: blur(1px);
   }
 }
 @media screen and (max-width: 767px) {
@@ -207,7 +208,8 @@ body {
     left: 0;
     right: 0;
     margin: auto;
-    background-color: rgba(128, 128, 128, 0.4588235294);
+    -webkit-backdrop-filter: blur(1px);
+            backdrop-filter: blur(1px);
     right: 0;
   }
 }
