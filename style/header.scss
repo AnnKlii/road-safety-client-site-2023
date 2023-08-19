@@ -55,7 +55,7 @@
             left: 0;
             right: 0;
             margin: auto;
-            background-color: #80808073;
+            backdrop-filter: blur(2px);
         }
 
         @media screen and (max-width: 767px) {
@@ -65,7 +65,7 @@
             left: 0;
             right: 0;
             margin: auto;
-            background-color: #80808073;
+            backdrop-filter: blur(2px);
         }
 
         @media screen and (min-width: 1500px) {
@@ -85,11 +85,13 @@
         @media screen and (min-width: 768px) and (max-width: 1024px) {
             font-size: 50px;
             text-align: center;
+            color: $blackcolor;
         }
 
         @media screen and (max-width: 767px) {
             font-size: 30px;
             text-align: center;
+            color: $blackcolor;
         }
 
         @media screen and (min-width: 1500px) {
@@ -107,7 +109,6 @@
             font-size: 18px;
             font-weight: 500;
             color: $blackcolor;
-            -webkit-text-stroke: 0.5px $blackcolor;
             letter-spacing: 2px;
         }
 
@@ -115,7 +116,6 @@
             font-size: 18px;
             font-weight: 500;
             color: $blackcolor;
-            -webkit-text-stroke: 0.5px $blackcolor;
             letter-spacing: 2px;
         }
 
@@ -216,7 +216,7 @@ span {
 }
 
 .sub_link {
-    color: white;
+    color: $middleblack;
 
     &:hover {
         color: $ochracolor;
