@@ -53,6 +53,7 @@
     right: 0;
     margin: auto;
     -webkit-backdrop-filter: blur(1px);
+            backdrop-filter: blur(1px);
   }
 }
 @media screen and (max-width: 767px) {
@@ -64,6 +65,7 @@
     right: 0;
     margin: auto;
     -webkit-backdrop-filter: blur(1px);
+            backdrop-filter: blur(1px);
   }
 }
 @media screen and (min-width: 1500px) {
@@ -218,7 +220,7 @@ span {
 }
 
 .sub_link {
-  color: #060606;
+  color: #676666;
 }
 .sub_link:hover {
   color: #FFBA00;
