@@ -526,6 +526,7 @@ span {
 }
 .content:hover {
   background-color: rgb(238, 215, 109);
+  cursor: pointer;
 }
 .content_image {
   height: 50px;
