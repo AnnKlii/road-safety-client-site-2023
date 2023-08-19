@@ -1,5 +1,6 @@
 @import 'variables.scss';
 
+
 .header-pages {
     position: relative;
     background-image: url(../../assets/bg_mini.jpg);
@@ -80,7 +81,6 @@
         font-weight: 700;
         font-size: 70px;
         text-transform: uppercase;
-        -webkit-text-stroke: 1px $blackcolor;
 
         @media screen and (min-width: 768px) and (max-width: 1024px) {
             font-size: 50px;
@@ -102,7 +102,6 @@
         font-weight: 400;
         text-align: center;
         font-size: 26px;
-        -webkit-text-stroke: 1px $blackcolor;
 
         @media screen and (min-width: 768px) and (max-width: 1024px) {
             font-size: 18px;

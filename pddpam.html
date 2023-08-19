@@ -7,8 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/pdd/style.css">
     <link rel="stylesheet" href="style/pdd/style.scss">
-    <link rel="stylesheet" href="style/pdd/variables.css">
-    <link rel="stylesheet" href="style/pdd/variables.scss">
+    <link rel="stylesheet" href="style/variables.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500;700&display=swap" rel="stylesheet">
@@ -16,36 +15,37 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header-pages">
         <div class="logo_block">
-            <a href="#">
-                <img class="logo" src="./assets/image/logo.png" alt="Logo">
+            <a href="index.html">
+                <img class="logo" src="./assets/logo.png" alt="logo">
             </a>
         </div>
-        <div class="header__title">
-            <h1 class="header__name">"ДОРОЖНЫЙ ПАТРУЛЬ"</h1>
-            <p class="header__text">КАЛИНИНГРАДСКАЯ РЕГИОНАЛЬНАЯ ОБЩЕСТВЕННАЯ<br> ОРГАНИЗАЦИЯ РАЗВИТИЯ
+        <div class="header-pages__title">
+            <h1 class="header-pages__name">"ДОРОЖНЫЙ ПАТРУЛЬ"</h1>
+            <p class="header-pages__text">КАЛИНИНГРАДСКАЯ РЕГИОНАЛЬНАЯ ОБЩЕСТВЕННАЯ<br> ОРГАНИЗАЦИЯ РАЗВИТИЯ
                 ИНФРАСТРУКТУРЫ,<br> БЛАГОУСТРОЙСТВА И ОБЩЕСТВЕННОГО КОНТРОЛЯ</p>
         </div>
-        <div class="header__navigation overlay">
+        <div class="header-pages__navigation overlay">
             <nav>
-                <ul class="header__nav container">
-                    <li class="header__link-block"><a class="header__link" href="#">О нас</a>
+                <ul class="header-pages__nav container">
+                    <li class="header-pages__link-block"><a class="header-pages__link" href="about_us.html">О нас</a>
                         <ul class="sub-menu">
                             <li><a class="sub_link" href="#1">Информация</a></li>
                             <li><a class="sub_link" href="#2">Местное отделение</a></li>
                             <li><a class="sub_link" href="#3">Уставные документы</a></li>
                         </ul>
                     </li>
-                    <li class="header__link-block"><a class="header__link" href="#">Статьи</a>
+                    <li class="header-pages__link-block"><a class="header-pages__link" href="Articles.html">Статьи</a>
                         <ul class="sub-menu">
-                            <li><a class="sub_link" href="#1">Законодательство</a></li>
-                            <li><a class="sub_link" href="#2">БДД</a></li>
-                            <li><a class="sub_link" href="#3">Прочее</a></li>
+                            <li><a class="sub_link" href="articles_law.html">Законодательство</a></li>
+                            <li><a class="sub_link" href="articles_safety.html">БДД</a></li>
+                            <li><a class="sub_link" href="articles_other.html">Прочее</a></li>
                         </ul>
                     </li>
-                    <li class="header__link-block"><a class="header__link" href="./map.html">Карта</a></li>
-                    <li class="header__link-block"><a class="header__link" href="./fine.html">Штрафы и Налоги</a>
+                    <li class="header-pages__link-block"><a class="header-pages__link" href="./map.html">Карта</a></li>
+                    <li class="header-pages__link-block"><a class="header-pages__link" href="./fine.html">Штрафы и
+                            Налоги</a>
                         <ul class="sub-menu">
                             <li><a class="sub_link"
                                     href="https://calcus.ru/transportnyj-nalog-kalkulyator/kaliningradskaya-oblast"
@@ -57,56 +57,59 @@
                                     на сайт НАЛОГ</a></li>
                         </ul>
                     </li>
-                    <li class="header__link-block"><a class="header__link" href="#">ПДД</a>
+                    <li class="header-pages__link-block"><a class="header-pages__link" href="pdd.html">ПДД</a>
                         <ul class="sub-menu">
                             <li><a class="sub_link" href="pdd.html">Прочтите детям</a></li>
                             <li><a class="sub_link" href="pddpam.html">Памятка первокласснику</a></li>
-                            <li><a class="sub_link" href="#3">Тест на знание ПДД</a></li>
+                            <li><a class="sub_link" href="test.html">Тест на знание ПДД</a></li>
                         </ul>
                     </li>
-                    <li class="header__link-block"><a class="header__link" href="./contacts.html">Контакты</a></li>
+                    <li class="header-pages__link-block"><a class="header-pages__link"
+                            href="./contacts.html">Контакты</a></li>
                 </ul>
-                <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">Меню</button>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a class="header__link" href="#">О нас</a>
-                        <a class="header__link" href="#">Статьи</a>
-                        <a class="header__link" href="./map.html">Карта</a>
-                        <a class="header__link" href="./fine.html">Штрафы и Налоги</a>
-                        <a class="header__link" href="./pdd.html">ПДД</a>
-                        <a class="header__link" href="./contacts.html">Контакты</a>
+                <div class="dropdown-pages">
+                    <button onclick="myFunction()" class="dropbtn-pages">Меню</button>
+                    <div id="myDropdown" class="dropdown-contents">
+                        <a class="header-pages__link" href="about_us.html">О нас</a>
+                        <a class="header-pages__link" href="Articles.html">Статьи</a>
+                        <a class="header-pages__link" href="./map.html">Карта</a>
+                        <a class="header-pages__link" href="./fine.html">Штрафы и Налоги</a>
+                        <a class="header-pages__link" href="pdd.html">ПДД</a>
+                        <a class="sub_link" href="pddpam.html">Памятка первокласснику</a>
+                <a class="header__link" href="test.html">ТЕСТ</a>
+                        <a class="header-pages__link" href="./contacts.html">Контакты</a>
                     </div>
                 </div>
             </nav>
         </div>
     </header>
-  <main class="main_container-pam container">
+<main class="main_container-pam container">
 <h1 class="main_container-pam-title">Памятка первокласснику</h1>
 <div class="main_container-pam-content">
 <div class="main_container-pam-text">1.Ходить следует только по тротуару, пешеходной или велосипедной дорожке, а если нет – по обочине (по краю проезжей части) обязательно Навстречу движению транспортных средств.</div>
-<div class="main_container-pam-photo"><img src="assets/image/дорога.jpg" alt="дорога" style="width: 100%;"></div>
+<div class="main_container-pam-photo"><img class="main_container-pam-photo1" src="assets/image/road.jpg" alt="дорога" style="width: 100%;"></div>
 <div class="main_container-pam-text">2. Там, где есть светофор дорогу надо переходить только на зелёный сигнал светофора.</div>
-<div class="main_container-pam-photo"><img src="assets/image/светофорчик.jpg" alt="светофор" style="width: 100%;"></div>
+<div class="main_container-pam-photo"><img class="main_container-pam-photo1"src="assets/image/light.jpg" alt="светофор" style="width: 100%;"></div>
 <div class="main_container-pam-text">3. В местах, где нет светофоров, дорогу безопасно  переходить по подземному или наземному пешеходному переходу, а при их отсутствии по пешеходному («зебра»)</div>
-<div class="main_container-pam-photo"><img src="assets/image/переходы.jpg" alt="переходы" style="width: 100%;"></div>
+<div class="main_container-pam-photo"><img class="main_container-pam-photo1" src="assets/image/transitions.jpg" alt="переходы" style="width: 100%;"></div>
 <div class="main_container-pam-text">4. Если есть подземный переход, нужно переходить дорогу только по нему.</div>
-<div class="main_container-pam-photo"><img src="assets/image/дорожные знаки.jpg" alt="знаки" style="width: 100%;"></div>
+<div class="main_container-pam-photo"><img class="main_container-pam-photo1" src="assets/image/signs.jpg" alt="знаки" style="width: 100%;"></div>
 <div class="main_container-pam-text">5. Переходя дорогу, нужно сначала посмотреть налево, а  на разделительной полосе (посередине дороги) – направо.</div>
-<div class="main_container-pam-photo"><img src="assets/image/дорога.jpg" alt="road" style="width: 100%;"></div>
+<div class="main_container-pam-photo"><img class="main_container-pam-photo1" src="assets/image/roadpp.png" alt="road" style="width: 100%;"></div>
 <div class="main_container-pam-text">6. Ожидать автобус нужно только на специальной остановочной площадке.</div>
-<div class="main_container-pam-photo"><img src="assets/image/остановка.jpg" alt="остановка" style="width: 100%;"></div>
+<div class="main_container-pam-photo"><img class="main_container-pam-photo1" src="assets/image/busstop.jpg" alt="остановка" style="width: 100%;"></div>
 <div class="main_container-pam-text">7. Ни в коем случае не перебегай дорогу перед близко идущей машиной. </div>
-<div class="main_container-pam-photo"><img src="assets/image/не перебегай.jpg" alt="дорога" style="width: 100%;"></div>
+<div class="main_container-pam-photo"><img class="main_container-pam-photo1" src="assets/image/not.jpg" alt="дорога" style="width: 100%;"></div>
 <div class="main_container-pam-text">8. Если красный сигнал светофора застал тебя на середине дороги, следует остановиться на разделительной полосе и дождаться зелёного.</div>
-<div class="main_container-pam-photo"><img src="assets/image/переход дороги.jpg" alt="переход дороги" style="width: 100%;"></div>
+<div class="main_container-pam-photo"><img class="main_container-pam-photo1" src="assets/image/run.jpg" alt="переход" style="width:100%;"></div>
 <div class="main_container-pam-text">9. Переходя дорогу на зелёный сигнал светофора, нужно следить за движением автомобилей.</div>
-<div class="main_container-pam-photo"><img src="assets/image/зеленый.jpg" alt="зеленый свет" style="width: 100%;"></div>
+<div class="main_container-pam-photo"><img class="main_container-pam-photo1" src="assets/image/green.jpg" alt="зеленыйсвет" style="width:100%;"></div>
 <div class="main_container-pam-text">10. Если отсутствует пешеходный переход, дорогу разрешается переходить там, где она просматривается в обе стороны.</div>
-<div class="main_container-pam-photo"><img src="assets/image/дорогап.png" alt="дорога" style="width: 100%;"></div>
+<div class="main_container-pam-photo"><img class="main_container-pam-photo1" src="assets/image/road_kids.jpeg" alt="дорога" style="width:100%"></div>
 <div class="main_container-pam-text">11. Никогда не играйте на проезжей части улицы.  </div>
-<div class="main_container-pam-photo"><img src="assets/image/проезжая часть.jpg" alt="проезжая часть"style="width: 100%;"></div>
+<div class="main_container-pam-photo"><img class="main_container-pam-photo1" src="assets/image/partroad.jpg" alt="проезжаячасть" style="width:100%"></div>
 <div class="main_container-pam-text">12. Катаясь на велосипеде, роликовых коньках и скейтборде, будьте внимательными и осторожными.</div>
-<div class="main_container-pam-photo"><img src="assets/image/осторожно.jpg" alt="осторожно" style="width: 100%;"></div>
+<div class="main_container-pam-photo"><img class="main_container-pam-photo1" src="assets/image/becarefull.jpg" alt="осторожно" style="width: 100%;"></div>
 
 
 
@@ -117,7 +120,7 @@
 <footer class="footer">
     <div class="footer__content container">
         <div class="footer__left">
-            <a href="#">
+            <a href="index.html">
                 <img class="footer__logo" src="./assets/image/logo.png" alt="Logo">
                 <p class="footer__text">"ДОРОЖНЫЙ ПАТРУЛЬ"<br> КАЛИНИНГРАДСКАЯ РЕГИОНАЛЬНАЯ ОБЩЕСТВЕННАЯ<br>
                     ОРГАНИЗАЦИЯ РАЗВИТИЯ ИНФРАСТРУКТУРЫ,<br> БЛАГОУСТРОЙСТВА И ОБЩЕСТВЕННОГО КОНТРОЛЯ</p>
@@ -128,7 +131,7 @@
                         d="M12 2C7.589 2 4 5.589 4 9.995 3.971 16.44 11.696 21.784 12 22c0 0 8.029-5.56 8-12 0-4.411-3.589-8-8-8zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" />
                 </svg> Калининградская обл, г.о. город Калининград, г Калининград, ул Коммунальная, д. 4-6, помещ.
                 IV/4</p>
-            <p class="footer__address footer__text"><svg class="address_img" data-name="Livello 1" id="Livello_1"
+            <p class="footer__address footer__text"><svg class="address_img" data-name="Livello 1" id="Livello_11"
                     viewBox="0 0 129 128" xmlns="http://www.w3.org/2000/svg">
                     <title />
                     <path
@@ -136,12 +139,12 @@
                     <path
                         d="M113,19H15A15,15,0,0,0,0,34V94a15,15,0,0,0,15,15h98a15,15,0,0,0,15-15V34A15,15,0,0,0,113,19Zm9,75a9,9,0,0,1-9,9H15a9,9,0,0,1-9-9V34a9,9,0,0,1,9-9h98a9,9,0,0,1,9,9Z" />
                 </svg><a class="footer__links" href="mailto:okbdd39@mail.ru">okbdd39@mail.ru</a> </p>
-            <p class="footer__address footer__text"><svg class="address_img" version="1.1" id="Capa_1"
+            <p class="footer__address footer__text"><svg class="address_img" version="1.1" id="Capa_11"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     fill="white" width="10px" height="10px" viewBox="0 0 612 612"
                     style="enable-background:new 0 0 612 612;" xml:space="preserve">
                     <g>
-                        <g id="Phone">
+                        <g id="Phonee">
                             <g>
                                 <path
                                     d="M559.959,383.188l-99.145-50.93c-24.27-12.508-55.653-8.243-75.772,10.251l-11.571,10.595
@@ -194,10 +197,10 @@
         </div>
         <div class="footer__center">
             <h3 class="footer_title">Ссылки</h3>
-            <a class="footer__links" href="#">О нас</a>
-            <a class="footer__links" href="#">Статьи</a>
+            <a class="footer__links" href="about_us.html">О нас</a>
+            <a class="footer__links" href="Articles.html">Статьи</a>
             <a class="footer__links" href="fine.html">Штрафы и налоги</a>
-            <a class="footer__links" href="#">ПДД</a>
+            <a class="footer__links" href="pdd.html">ПДД</a>
             <a class="footer__links" href="contacts.html">Контакты</a>
         </div>
         <div class="footer_right">
@@ -207,7 +210,25 @@
         </div>
     </div>
 </footer>
+<script>
+    function myFunction() {
+document.getElementById("myDropdown").classList.toggle("show");
+}
 
+window.onclick = function(event) {
+if (!event.target.matches('.dropbtn-pages')) {
+
+let dropdowns = document.getElementsByClassName("dropdown-contents");
+let i;
+for (i = 0; i < dropdowns.length; i++) {
+let openDropdown = dropdowns[i];
+if (openDropdown.classList.contains('show')) {
+    openDropdown.classList.remove('show');
+}
+}
+}
+}
+</script>
 </body>
 
 </html>
