@@ -74,7 +74,7 @@
   }
 }
 .header-pages__name {
-  color: #130C00;
+  color: black;
   font-weight: 700;
   font-size: 70px;
   text-transform: uppercase;
@@ -97,7 +97,7 @@
   }
 }
 .header-pages__text {
-  color: #130C00;
+  color: black;
   font-weight: 400;
   text-align: center;
   font-size: 26px;
