@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.scss">
     <link rel="stylesheet" href="style/style.css">
@@ -28,11 +29,7 @@
 <div class="header__navigation overlay">
 <nav>
     <ul class="header__nav container">
-        <li class="header__link-block"><a class="header__link" href="about_us.html">О нас</a><ul class="sub-menu">
-            <li><a class="sub_link" href="#1">Информация</a></li>
-            <li><a class="sub_link" href="#2">Местное отделение</a></li>
-            <li><a class="sub_link" href="#3">Уставные документы</a></li>
-            </ul>
+        <li class="header__link-block"><a class="header__link" href="about_us.html">О нас</a>
         </li>
         <li class="header__link-block"><a class="header__link" href="Articles.html">Статьи</a><ul class="sub-menu">
             <li><a class="sub_link" href="articles_law.html">Законодательство</a></li>
@@ -57,11 +54,13 @@
     <div class="dropdown">
         <button onclick="myFunction()" class="dropbtn">Меню</button>
         <div id="myDropdown" class="dropdown-content">
-                <a class="header__link" href="#">О нас</a>
-                <a class="header__link" href="#">Статьи</a>
+                <a class="header__link" href="about_us.html">О нас</a>
+                <a class="header__link" href="Articles.html">Статьи</a>
                 <a class="header__link" href="map.html">Карта</a>
                 <a class="header__link" href="fine.html">Штрафы и Налоги</a>
-                <a class="header__link" href="#">ПДД</a>
+                <a class="header__link" href="pdd.html">ПДД</a>
+                <a class="sub_link" href="pddpam.html">Памятка первокласснику</a>
+                <a class="header__link" href="test.html">ТЕСТ</a>
                 <a class="header__link" href="contacts.html">Контакты</a>
         </div>
         </div>
@@ -98,9 +97,16 @@
             <img src="./assets/image/road_kids.jpeg" alt="kids" style="width:100%">
             <div class="main__card-text">
             <h4><b>Прочее</b></h4>
-            <a class="card__link" href="articles_other.html"><p class="card__text">Без ОСАГО жизнь современного автомобилиста была бы скучна и непредсказуема. Факты об ОСАГО Первое —
-                штраф для водителя, чье имя не указано в полисе обязательной автостраховки на автомобиль.
-                Предусмотрены штрафы за езду на автомобиле без автострахования. Читать далее...</p></a>
+            <a class="card__link" href="articles_other.html"><p class="card__text">Без ОСАГО жизнь современного автомобилиста была&nbsp;бы скучна и&nbsp;непредсказуема. Факты
+                об&nbsp;ОСАГО.
+                Первое,за управление
+                транспортным
+                средством без ОСАГО предусмотрен штраф для водителя, чье имя не&nbsp;указано в&nbsp;полисе обязательной
+                автостраховки на&nbsp;автомобиль. Предусмотрены штрафы за&nbsp;езду на&nbsp;автомобиле без
+                автострахования. Сумма штрафа
+                на&nbsp;законодательном уровне&nbsp;&mdash; 800&nbsp;рублей. Если у&nbsp;водителя имеется полис
+                с&nbsp;ограниченным сроком действия, он
+                должен заплатить 500&nbsp;рублей. Читать далее...</p></a>
             </div>
         </div>
     </div>
@@ -112,22 +118,22 @@
         <div class="links__card gibdd">
             <div class="content">
                 <img class="content_image" src="./assets/image/gibdd-icon.svg" alt="gibdd">
-                <a href=""><h3 class="content_title">ГИБДД по г.Калининграду</h3></a>
-                <a href="#"><p class="content_text">Правила парковки на различных типах дорог и в разных местах</p></a>
+                <a href="https://v2.gibdd.ru/r/39/contacts/div1127012/"><h3 class="content_title">ГИБДД по г.Калининграду</h3></a>
+                <a href="https://v2.gibdd.ru/r/39/contacts/div1127012/"><p class="content_text">Правила парковки на различных типах дорог и в разных местах</p></a>
             </div>
         </div>
         <div class="links__card map">
             <div class="content">
                 <img class="content_image" src="./assets/image/map-icon.svg" alt="Интерактивная карта">
-                <a href="#"><h3 class="content_title">Интерактивная карта</h3></a>
-                <a href="#"><p class="content_text">Данные о центрах помощи при ДТП, специализированных стоянках и камерах</p></a>
+                <a href="map.html"><h3 class="content_title">Интерактивная карта</h3></a>
+                <a href="map.html"><p class="content_text">Данные о центрах помощи при ДТП, специализированных стоянках и камерах</p></a>
             </div>    
         </div>
         <div class="links__card government">
             <div class="content">
                 <img class="content_image" src="./assets/image/government-icon.svg" alt="Правительство Калининградской области">
                 <a href="https://gov39.ru/"><h3 class="content_title">Правительство Калининградской области</h3></a>
-                <a href="#"><p class="content_text">О городе, его структурах и властных органах, включая администрацию округа</p></a>
+                <a href="https://gov39.ru/"><p class="content_text">О городе, его структурах и властных органах, включая администрацию округа</p></a>
             </div>
         </div>
     </div>
@@ -139,7 +145,7 @@
                 <h2 class="test__title">Проверь свои знания на правила дорожного движения (ПДД)</h2> 
         <p class="test__text">Тесты на правила дорожного движения (ПДД) предназначены для проверки знаний и навыков водителей или будущих водителей в области правил и безопасности на дорогах</p>
     </div> 
-    <a class="test__button" href="#">Старт</a>
+    <a class="test__button" href="test.html">Старт</a>
 </div>
     <div class="test__statistics">
         <div class="test__part">
